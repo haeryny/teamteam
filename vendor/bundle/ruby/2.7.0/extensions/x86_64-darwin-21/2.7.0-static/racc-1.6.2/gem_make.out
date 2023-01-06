@@ -1,0 +1,18 @@
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+/Users/Theo/.rubies/ruby-2.7.7/bin/ruby -I /Users/Theo/.rubies/ruby-2.7.7/lib/ruby/2.7.0 -r ./siteconf20230105-13659-1n8f4g9.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20230105-13659-12ksb1k/racc

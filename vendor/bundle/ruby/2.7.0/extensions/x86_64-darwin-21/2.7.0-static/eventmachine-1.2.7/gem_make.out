@@ -1,0 +1,17 @@
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/Theo/.rubies/ruby-2.7.7/bin/ruby -I /Users/Theo/.rubies/ruby-2.7.7/lib/ruby/2.7.0 -r ./siteconf20230105-13659-147jvib.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20230105-13659-5vgsks

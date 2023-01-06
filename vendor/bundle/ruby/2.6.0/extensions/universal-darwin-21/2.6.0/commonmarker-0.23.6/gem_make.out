@@ -1,5 +1,5 @@
 current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.6/ext/commonmarker
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20230105-94795-25u8d0.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20230105-12839-13vnlam.rb extconf.rb
 creating Makefile
 
 current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.6/ext/commonmarker
@@ -7,6 +7,6 @@ make "DESTDIR=" clean
 
 current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.6/ext/commonmarker
 make "DESTDIR="
-make: *** No rule to make target `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin21/ruby/config.h', needed by `arena.o'.  Stop.
+make: *** No rule to make target `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin21/ruby/config.h', needed by `arena.o'.  Stop.
 
 make failed, exit code 2

@@ -1,0 +1,17 @@
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+/Users/Theo/.rubies/ruby-2.7.7/bin/ruby -I /Users/Theo/.rubies/ruby-2.7.7/lib/ruby/2.7.0 -r ./siteconf20230105-13659-wrpnv.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/Theo/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20230105-13659-15zus87
