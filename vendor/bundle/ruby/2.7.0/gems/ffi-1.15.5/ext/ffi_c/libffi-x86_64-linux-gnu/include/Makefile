@@ -14,7 +14,11 @@
 
 
 
+<<<<<<< HEAD
+VPATH = /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/include
+=======
 VPATH = /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/include
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 am__is_gnu_make = { \
   if test -z '$(MAKELEVEL)'; then \
     false; \
@@ -183,16 +187,26 @@ ETAGS = etags
 CTAGS = ctags
 am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/ffi.h.in
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+<<<<<<< HEAD
+ACLOCAL = ${SHELL} /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/missing aclocal-1.16
+=======
 ACLOCAL = ${SHELL} /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/missing aclocal-1.16
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 ALLOCA = 
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AM_LTLDFLAGS = 
 AM_RUNTESTFLAGS = 
 AR = ar
+<<<<<<< HEAD
+AUTOCONF = ${SHELL} /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/missing autoconf
+AUTOHEADER = ${SHELL} /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/missing autoheader
+AUTOMAKE = ${SHELL} /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/missing automake-1.16
+=======
 AUTOCONF = ${SHELL} /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/missing autoconf
 AUTOHEADER = ${SHELL} /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/missing autoheader
 AUTOMAKE = ${SHELL} /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/missing automake-1.16
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 AWK = gawk
 CC = gcc
 CCAS = gcc
@@ -237,7 +251,11 @@ LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 MAINT = #
+<<<<<<< HEAD
+MAKEINFO = ${SHELL} /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/missing makeinfo
+=======
 MAKEINFO = ${SHELL} /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/missing makeinfo
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 MANIFEST_TOOL = :
 MKDIR_P = /usr/bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -266,10 +284,17 @@ TARGET = X86_64
 TARGETDIR = x86
 TARGET_OBJ =  src/x86/ffi64.lo src/x86/unix64.lo src/x86/ffiw64.lo src/x86/win64.lo
 VERSION = 3.3
+<<<<<<< HEAD
+abs_builddir = /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi-x86_64-linux-gnu/include
+abs_srcdir = /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/include
+abs_top_builddir = /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi-x86_64-linux-gnu
+abs_top_srcdir = /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi
+=======
 abs_builddir = /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi-x86_64-linux-gnu/include
 abs_srcdir = /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/include
 abs_top_builddir = /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi-x86_64-linux-gnu
 abs_top_srcdir = /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -300,7 +325,11 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
+<<<<<<< HEAD
+install_sh = ${SHELL} /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/install-sh
+=======
 install_sh = ${SHELL} /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/install-sh
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -315,7 +344,11 @@ psdir = ${docdir}
 runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
+<<<<<<< HEAD
+srcdir = /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/include
+=======
 srcdir = /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/include
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 sys_symbol_underscore = no
 sysconfdir = ${prefix}/etc
 target = x86_64-pc-linux-gnu
@@ -327,7 +360,11 @@ toolexecdir = ${libdir}/gcc-lib/$(target_alias)
 toolexeclibdir = ${libdir}/../lib
 top_build_prefix = ../
 top_builddir = ..
+<<<<<<< HEAD
+top_srcdir = /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi
+=======
 top_srcdir = /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 AUTOMAKE_OPTIONS = foreign
 DISTCLEANFILES = ffitarget.h
 noinst_HEADERS = ffi_common.h ffi_cfi.h

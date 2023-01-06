@@ -1,6 +1,10 @@
 #! /bin/bash
 # Generated automatically by config.status (libffi) 3.3
+<<<<<<< HEAD
+# Libtool was configured on host DESKTOP-O2SB9O2:
+=======
 # Libtool was configured on host DESKTOP-B9EJFTF:
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 
 # Provide generalized library-building support services.

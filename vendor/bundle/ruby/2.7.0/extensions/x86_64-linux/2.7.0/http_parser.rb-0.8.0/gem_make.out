@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230106-9769-7bq179.rb extconf.rb
+creating Makefile
+
+current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+=======
 current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
 /usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230106-19321-1nut14s.rb extconf.rb
 creating Makefile
@@ -6,11 +16,18 @@ current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ht
 make "DESTDIR=" clean
 
 current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 make "DESTDIR="
 compiling ruby_http_parser.c
 compiling ryah_http_parser.c
 linking shared-object ruby_http_parser.so
 
+<<<<<<< HEAD
+current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20230106-9769-1ewokjo
+=======
 current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
 make "DESTDIR=" install
 /usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20230106-19321-1jn7zoy
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e

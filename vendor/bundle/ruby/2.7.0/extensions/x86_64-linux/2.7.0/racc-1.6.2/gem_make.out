@@ -1,17 +1,35 @@
+<<<<<<< HEAD
+current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230106-9769-1t1yzng.rb extconf.rb
+=======
 current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
 /usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230106-19321-1lij020.rb extconf.rb
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 checking for rb_block_call()... yes
 checking for rb_ary_subseq()... yes
 creating Makefile
 
+<<<<<<< HEAD
+current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+=======
 current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
 make "DESTDIR=" clean
 
 current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 make "DESTDIR="
 compiling cparse.c
 linking shared-object racc/cparse.so
 
+<<<<<<< HEAD
+current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20230106-9769-o3948z/racc
+=======
 current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
 make "DESTDIR=" install
 /usr/bin/install -c -m 0755 cparse.so ./.gem.20230106-19321-1o68w2e/racc
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
