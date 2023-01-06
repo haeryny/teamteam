@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
 /usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230106-9769-1toz6fr.rb extconf.rb
 checking for -lstdc++... yes
@@ -7,10 +8,27 @@ current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/unf_ext-
 make "DESTDIR=" clean
 
 current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+=======
+current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230106-19321-1ii7sce.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 make "DESTDIR="
 compiling unf.cc
 linking shared-object unf_ext.so
 
+<<<<<<< HEAD
 current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
 make "DESTDIR=" install
 /usr/bin/install -c -m 0755 unf_ext.so ./.gem.20230106-9769-11phji5
+=======
+current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20230106-19321-vkedcr
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e

@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 # 1 "/home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/libffi.map.in"
+=======
+# 1 "/home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/libffi.map.in"
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
+<<<<<<< HEAD
 # 1 "/home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/libffi.map.in"
 
 
@@ -10,6 +15,15 @@
 # 4 "/home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/libffi.map.in" 2
 # 1 "include/ffitarget.h" 1
 # 5 "/home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/libffi.map.in" 2
+=======
+# 1 "/home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/libffi.map.in"
+
+
+# 1 "./fficonfig.h" 1
+# 4 "/home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/libffi.map.in" 2
+# 1 "include/ffitarget.h" 1
+# 5 "/home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/ffi-1.15.5/ext/ffi_c/libffi/libffi.map.in" 2
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 
 
 

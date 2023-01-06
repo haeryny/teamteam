@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
 /usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230106-9769-2cb2kw.rb extconf.rb
 creating Makefile
@@ -6,11 +7,27 @@ current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmac
 make "DESTDIR=" clean
 
 current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+=======
+current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20230106-19321-srglhs.rb extconf.rb
+creating Makefile
+
+current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
 make "DESTDIR="
 compiling mapper.cpp
 compiling rubymain.cpp
 linking shared-object fastfilereaderext.so
 
+<<<<<<< HEAD
 current directory: /home/haeryny/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" install
 /usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20230106-9769-p14n09
+=======
+current directory: /home/kaylee/vscode/teamteam/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20230106-19321-94wpm
+>>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
