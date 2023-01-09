@@ -53,7 +53,7 @@ h3 {
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 278px;
+  width: 220px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
