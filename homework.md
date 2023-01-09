@@ -128,28 +128,31 @@ body {font-family: Verdana, sans-serif;}
 > This is the homework you have for each class and what day it is due. 
 
 ## Name of Class
-<input type="text">
+<input type="text" name="entry-title" id="entry-title" class="entry-text-title" placeholder="Name of Class"/>
 
 ## Date due
-<input type="text">
+<input type="text" name="entry-title" id="entry-title" class="date" placeholder="Date"/>
 
 ## Homework
-<input type="text">
+<input type="text" name="entry-title" id="entry-title" class="entry-text-title" placeholder="Homework Title"/>
 
-# Example
-### AP Chemistry
-- Collegeboard MC (Questions #5-35) due on Thursday 1/12
-- Acid Base Review WS (Questions #1-8) due on Monday 1/9
-- Titration Lab Writeup Poster due on Monday 1/9
+<button class="btn-main entry-submit-btn" type="submit">Submit</button>
 
-### AP Calculus
-- Pg. 411-414 (Questions #15, 16, 22, 23) due on Monday 1/9
-- Area Under a Curve Part 3 WS (Questions #6-8) due on Monday 1/9
+<section class="section sectionEntryResults" id="entryResultsSection">
+      <h2>Homework Assignments</h2>
+      <div class="container">
+        <div class="container-row entryResultRow"></div>
+      </div>
+</section>
+Name of Class: AP CSP
 
-### AP Studio Art: Drawing and Painting
-- Finish SI Piece: #9 due on Friday 1/13
-- Start SI Piece: #10 due on Monday 1/27
+Date: 1/9
 
-### Honors Humanities 1
-- Rough Draft of AA: Essay due on Tuesday 1/10
-- Presentation of Self Portrait due on Friday 1/13
+Homework: College Board CPT Grading
+
+
+Name of Class: AP Chemistry
+
+Date: 1/9
+
+Homework Title: Questions 1-8
