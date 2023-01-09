@@ -6,7 +6,8 @@
         </style>
 </head>
 <body>
-          
+
+<p>Wait for the videos to load!</p>
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Instructions')">Instructions</button>
     <button class="tablinks" onclick="openCity(event, 'Back/Biceps')">Back/Biceps</button>
