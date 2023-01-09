@@ -1,3 +1,4 @@
+# My Schedule
 ### Add/edit your own!
 
 <table class="editabletable" table id="myTable" border="1">
