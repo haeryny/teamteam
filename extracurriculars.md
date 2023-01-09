@@ -53,7 +53,7 @@ h3 {
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 170px;
+  width: 190px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -122,7 +122,7 @@ h3 {
   </div>
 </div>
 
-<a href="https://hobbyhelp.com/skateboarding/" class="button" style="vertical-align:middle"><span>Skateboarding </span></a>
+<a href="https://hobbyhelp.com/skateboarding/" class="button" style="vertical-align:middle"><span>Skateboard </span></a>
 <a href="https://leftyfretz.com/is-guitar-a-good-hobby/" class="button" style="vertical-align:middle"><span>Guitar </span></a>
 <a href="https://www.discoverahobby.com/singing" class="button" style="vertical-align:middle"><span>Singing </span></a>
 
@@ -231,7 +231,7 @@ input {
 
 /* Style the "Add" button */
 .addBtn {
-  padding: 10px;
+  padding: 7px;
   width: 25%;
   background: #d9d9d9;
   color: #555;
