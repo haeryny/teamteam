@@ -1,6 +1,10 @@
 theme: jekyll-theme-midnight
 title: "New Year, New You"
+<<<<<<< HEAD
 description: "Become your best self in 2023!"
+=======
+description: "This is your year"
+>>>>>>> 386ee4facffa8ea13c0eadbb0e0d1f3442b39375
 gitorg: "https://github.com/haeryny/teamteam"
 google_analytics:
 exclude: 
