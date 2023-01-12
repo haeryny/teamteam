@@ -20,29 +20,20 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT".freeze]
   s.rdoc_options = ["--main".freeze, "README.md".freeze]
   s.required_ruby_version = Gem::Requirement.new([">= 2.6".freeze, "< 3.2.dev".freeze])
-<<<<<<< HEAD
 
-=======
 # <<<<<<< HEAD
->>>>>>> e496d720af668c4d568e325a283de81b95ab7905
+
   s.rubygems_version = "3.1.6".freeze
   s.summary = "Nokogiri (\u92F8) makes it easy and painless to work with XML and HTML from Ruby.".freeze
 
   s.installed_by_version = "3.1.6" if s.respond_to? :installed_by_version
-<<<<<<< HEAD
-
-=======
 # =======
->>>>>>> e496d720af668c4d568e325a283de81b95ab7905
+
   s.rubygems_version = "3.1.2".freeze
   s.summary = "Nokogiri (\u92F8) makes it easy and painless to work with XML and HTML from Ruby.".freeze
 
   s.installed_by_version = "3.1.2" if s.respond_to? :installed_by_version
-<<<<<<< HEAD
 
-=======
-# >>>>>>> 9e53b1be228eea385858dcc9b440c9c6b1a9309e
->>>>>>> e496d720af668c4d568e325a283de81b95ab7905
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
