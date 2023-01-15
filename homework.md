@@ -1,3 +1,9 @@
+---
+
+layout: home
+
+---
+
 <head>
 <style>
 * {box-sizing: border-box;}

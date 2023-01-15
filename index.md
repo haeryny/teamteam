@@ -1,3 +1,13 @@
+---
+title: "Welcome!"
+layout: home
+author: Group
+header:
+  overlay_image: /assets/images/spark.png
+author_profile: true
+---
+
+
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -176,7 +186,7 @@ window.onclick = function(event) {
 ### Add/edit your own!
 
 <table class="editabletable" table id="myTable" border="1">
-  <tr> <td>Classes</td> <td>Extracurriculars</td> <td>Self-care</td> <td>Done?</td> </tr>
+  <tr> <td>Classes</td> <td>Extracurricular</td> <td>Self-care</td> <td>Done?</td> </tr>
   <tr> <td>Example: APCSP</td> <td>soccer practice</td> <td>mediate for 5 min</td> <td>Y</td> </tr>
   <tr> <td>Class Two</td> <td></td> <td></td> <td></td> </tr>
   <tr> <td>Class Three</td> <td></td> <td></td> <td></td> </tr>

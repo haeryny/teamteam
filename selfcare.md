@@ -1,13 +1,21 @@
+---
+
+layout: single
+classes: wide
+
+---
 
 # Mood Rating
+
 A healthy method to release stress and to feel less overwhelmed is to recognize your emotions. Based off research, having an awareness of your emotions makes you feel more in control, avoid negative thoughts, and have an understanding of your feelings.
 <!-- Mood, this is where the user enters in their mood through a slider and the emojis change -->
   <label for="entry-title" class="journal-label">Mood Rating</label>
-                    <p class="description">:grin: Rate your mood on a scale from 1-10 :)</p>
-                    <div class="slidecontainer">
-                      <p id="output" class="output">5</p>
-                      <input type="range" min="1" max="10" value="5" class="slider" id="mood">
-                    </div>
+  <p class="description">:grin: Rate your mood on a scale from 1-10 :)</p>
+  <div class="slidecontainer">
+    <p id="output" class="output">5</p>
+    <input type="range" min="1" max="10" value="5" class="slider" id="mood">
+  </div>
+
 # Healthy Methods to Relieve Stress
 ## Positive affirmations:
 A positive affirmation is a phrase you can say to yourself that makes you feel good and reminds you that you can do anything and be anyone you want to be.
