@@ -44,7 +44,7 @@ h3 {
 <body>
 
 <h1>Pick up a new hobby!</h1>
-<h3>click on button to learn more about it:</h3>
+<h3>click on a hobby button to learn more about it:</h3>
 
 <div class="row">
   <div class="column">
@@ -279,7 +279,7 @@ input {
   <li class="checked">Dance</li>
 </ul>
 
-<script>
+<!-- <script>
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -292,14 +292,14 @@ for (i = 0; i < myNodelist.length; i++) {
 }
 
 // Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
+// var close = document.getElementsByClassName("close");
+// var i;
+// for (i = 0; i < close.length; i++) {
+//   close[i].onclick = function() {
+//     var div = this.parentElement;
+//     div.style.display = "none";
+//   }
+// }
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
@@ -335,7 +335,7 @@ function newElement() {
     }
   }
 }
-</script>
+</script> -->
 
 </body>
-</html> -->
+</html> 
