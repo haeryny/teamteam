@@ -336,6 +336,3 @@ function newElement() {
   }
 }
 </script> -->
-
-</body>
-</html> 
