@@ -42,3 +42,26 @@ workout-bar:
       - title: "Leg Press"
       - title: "Laying Leg Curls"
       - title: "Bulgarian Split Squats"
+
+extracurricular-navbar:
+  - title: "Mind Growth/Leisure"
+    children:
+      - title: "Reading"
+      - title: "Gardening"
+      - title: "Painting/Drawing"
+      - title: "Meditation"
+      - title: "Baking"
+  - title: "Physical Activity"
+    children:
+      - title: "Skateboarding"
+      - title: "Kickboxing"
+      - title: "Swimming"
+      - title: "Basketball"
+      - title: "Soccer"
+  - title: "The Arts"
+    children:
+      - title: "Singing"
+      - title: "Piano"
+      - title: "Theatre"
+      - title: "Dance"
+      - title: "Guitar"

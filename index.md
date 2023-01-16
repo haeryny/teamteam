@@ -6,7 +6,32 @@ header:
   overlay_image: /assets/images/spark.png
 author_profile: true
 ---
+# My Schedule
+### Add/edit your own!
 
+<table class="editabletable" table id="myTable" border="1">
+  <tr> <td>Classes</td> <td>Extracurricular</td> <td>Self-care</td> <td>Done?</td> </tr>
+  <tr> <td>Example: APCSP</td> <td>soccer practice</td> <td>mediate for 5 min</td> <td>Y</td> </tr>
+  <tr> <td>Class Two</td> <td></td> <td></td> <td></td> </tr>
+  <tr> <td>Class Three</td> <td></td> <td></td> <td></td> </tr>
+  <tr> <td>Class Four</td> <td></td> <td></td> <td></td> </tr>
+  <tr> <td>Class Five</td> <td></td> <td></td> <td></td> </tr>
+</table>  
+<script src="index.js"></script>
+<button onclick="addCell()">Add Cell</button>
+
+<script>
+  function addCell() {
+    // Get the table element
+    var table = document.getElementById("myTable");
+    
+    // Create a new cell element
+    var cell = document.createElement("td");
+    
+    // Add the cell to the last row of the table
+    table.lastChild.appendChild(cell);
+  }
+</script>
 
 <html>
 <head>
@@ -16,7 +41,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -32,7 +57,7 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
 }
 
 button:hover {
@@ -51,11 +76,6 @@ button:hover {
   text-align: center;
   margin: 24px 0 12px 0;
   position: relative;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
 }
 
 .container {
@@ -136,17 +156,19 @@ span.psw {
 </head>
 <body>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login Here</button>
+<h1>Login Here</h1>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:80%;">Login</button>
 
 <div id="id01" class="modal">
   
   <form class="modal-content animate" action="/action_page.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
+      <div><label for="uname"><b>Login Page</b></label></div>
       <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -176,35 +198,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-</script>
-
-</body>
-</html>
-
-
-# My Schedule
-### Add/edit your own!
-
-<table class="editabletable" table id="myTable" border="1">
-  <tr> <td>Classes</td> <td>Extracurricular</td> <td>Self-care</td> <td>Done?</td> </tr>
-  <tr> <td>Example: APCSP</td> <td>soccer practice</td> <td>mediate for 5 min</td> <td>Y</td> </tr>
-  <tr> <td>Class Two</td> <td></td> <td></td> <td></td> </tr>
-  <tr> <td>Class Three</td> <td></td> <td></td> <td></td> </tr>
-  <tr> <td>Class Four</td> <td></td> <td></td> <td></td> </tr>
-  <tr> <td>Class Five</td> <td></td> <td></td> <td></td> </tr>
-</table>
-<script src="index.js"></script>
-<button onclick="addCell()">Add Cell</button>
-
-<script>
-  function addCell() {
-    // Get the table element
-    var table = document.getElementById("myTable");
-    
-    // Create a new cell element
-    var cell = document.createElement("td");
-    
-    // Add the cell to the last row of the table
-    table.lastChild.appendChild(cell);
-  }
 </script>

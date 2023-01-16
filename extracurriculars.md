@@ -2,6 +2,10 @@
 
 layout: single
 title: Extracurriculars
+sidebar:
+  title: "What type of Activity are you looking for?"
+  nav: extracurricular-navbar
+tagline: "Grow your mind and body"
 header:
   overlay_image: /assets/images/extracurriculars.jpeg
   caption: "Photo credit: [**Cincinnati Magazine**](https://www.cincinnatimagazine.com/article/extracurricular-activities-provided-a-lifeline/)"
@@ -141,7 +145,7 @@ h3 {
 <a href="https://leftyfretz.com/is-guitar-a-good-hobby/" class="button" style="vertical-align:middle"><span>Guitar </span></a>
 <a href="https://www.discoverahobby.com/singing" class="button" style="vertical-align:middle"><span>Singing </span></a>
 
-<html>
+<!-- <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -334,4 +338,4 @@ function newElement() {
 </script>
 
 </body>
-</html>
+</html> -->
