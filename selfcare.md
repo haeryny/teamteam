@@ -2,6 +2,13 @@
 
 layout: single
 classes: wide
+title: Self-care
+header:
+  overlay_image: /assets/images/selfcare.jpeg
+  caption: "Photo credit: [**capitalizemytitle.com**](https://capitalizemytitle.com/ufaqs/is-new-year-capitalized/)"
+  actions:
+    - label: "Self-care tips"
+      url: "https://www.defeatsuicide.com/post/some-positive-self-esteem-tips?gclid=CjwKCAiA5Y6eBhAbEiwA_2ZWIQeRZ4hlPEhDBZI4USNQjzr-2Fp_XV03W735OGEoikc6rc4N_NQsqhoCwWAQAvD_BwE"
 
 ---
 
