@@ -1,6 +1,13 @@
 ---
 
 layout: single
+title: Extracurriculars
+header:
+  overlay_image: /assets/images/extracurriculars.jpeg
+  caption: "Photo credit: [**Cincinnati Magazine**](https://www.cincinnatimagazine.com/article/extracurricular-activities-provided-a-lifeline/)"
+  actions:
+    - label: "More Activities"
+      url: "https://blog.prepscholar.com/list-of-extracurricular-activities-examples"
 
 ---
 
