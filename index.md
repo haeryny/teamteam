@@ -185,7 +185,7 @@ window.onclick = function(event) {
 # My Schedule
 ### Add/edit your own!
 
-<table class="editabletable" table id="myTable" border="1">
+<table class="editabletable" table id="myTable" border="4">
   <tr> <td>Classes</td> <td>Extracurricular</td> <td>Self-care</td> <td>Done?</td> </tr>
   <tr> <td>Example: APCSP</td> <td>soccer practice</td> <td>mediate for 5 min</td> <td>Y</td> </tr>
   <tr> <td>Class Two</td> <td></td> <td></td> <td></td> </tr>
