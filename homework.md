@@ -140,32 +140,34 @@ body {font-family: Verdana, sans-serif;}
 # Homework
 > This is the homework you have for each class and what day it is due. 
 
-## Name of Class
-<input type="text" name="entry-title" id="entry-title" class="entry-text-title" placeholder="Name of Class"/>
+<table>
+    <tr>
+        <th><label for="nameOfClass">Name of Class</label></th>
+        <th><label for="date">Date</label></th>
+        <th><label for="homeworkTitle">Homework Title</label></th>
+    </tr>
+    <tr>
+        <td><input type="text" name="nameOfClass" id="name" required></td>
+        <td><input type="date" name="date" id="date" placeholder="date" required></td>
+        <td><input type="text" name="homeworkTitle" id="homeworkTitle" required></td>
+        <td ><button onclick="create_User()">Create</button></td>
+    </tr>
+</table>
 
-## Date due
-<input type="text" name="entry-title" id="entry-title" class="date" placeholder="Date"/>
+<table>
+  <thead>
+  <tr>
+    <th></th>
+    <th>Name of Class</th>
+    <th>Date</th>
+    <th>Homework Title</th>
+  </tr>
+  </thead>
 
-## Homework
-<input type="text" name="entry-title" id="entry-title" class="entry-text-title" placeholder="Homework Title"/>
-
-<button class="btn-main entry-submit-btn" type="submit">Submit</button>
-
-<section class="section sectionEntryResults" id="entryResultsSection">
-      <h2>Homework Assignments</h2>
-      <div class="container">
-        <div class="container-row entryResultRow"></div>
-      </div>
-</section>
-Name of Class: AP CSP
-
-Date: 1/9
-
-Homework: College Board CPT Grading
-
-
-Name of Class: AP Chemistry
-
-Date: 1/9
-
-Homework Title: Questions 1-8
+  <tr>
+    <th>1</th>
+    <th>APCSP</th>
+    <th>1/16/23</th>
+    <th>Creating a table W/JSON data</th>
+  </tr>
+</table>

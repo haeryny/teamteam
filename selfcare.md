@@ -17,7 +17,7 @@ header:
 A healthy method to release stress and to feel less overwhelmed is to recognize your emotions. Based off research, having an awareness of your emotions makes you feel more in control, avoid negative thoughts, and have an understanding of your feelings.
 <!-- Mood, this is where the user enters in their mood through a slider and the emojis change -->
   <label for="entry-title" class="journal-label">Mood Rating</label>
-  <p class="description">:grin: Rate your mood on a scale from 1-10 :)</p>
+  <p class="description">Rate your mood on a scale from 1-10 :)</p>
   <div class="slidecontainer">
     <p id="output" class="output">5</p>
     <input type="range" min="1" max="10" value="5" class="slider" id="mood">
