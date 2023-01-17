@@ -1,0 +1,67 @@
+# main links
+main:
+  - title: "Home"
+    url: /index/
+  - title: "Workouts"
+    url: /workouts/
+  - title: "Extracurriculars"
+    url: /extracurriculars/
+  - title: "Self Care"
+    url: /selfcare/
+  - title: "Homework"
+    url: /homework/
+
+workout-bar:
+  - title: "Back/Biceps"
+    children:
+      - title: "Seated Row"
+      - title: "Lat Pulldown"
+      - title: "Bicep Curls"
+      - title: "Hammer Curls"
+      - title: "Wide Grip Seated Cable Row"
+      - title: "Preacher Curls"
+  - title: "Chest-Triceps"
+    children:
+      - title: "Bench Press"
+      - title: "Incline Bench"
+      - title: "Skull Crushers"
+      - title: "Tricep Pulldown"
+      - title: "Chest Fly"
+  - title: "Shoulders/Abs"
+    children:
+      - title: "Shoulder Press"
+      - title: "Lat Raises"
+      - title: "Face Pulls"
+      - title: "Situps"
+      - title: "Dumbbell Upright Rows"
+      - title: "Plank"
+  - title: "Legs"
+    children:
+      - title: "Squat"
+      - title: "Leg Extensions"
+      - title: "Leg Press"
+      - title: "Laying Leg Curls"
+      - title: "Bulgarian Split Squats"
+
+extracurricular-navbar:
+  - title: "Mind Growth/Leisure"
+    children:
+      - title: "Reading"
+      - title: "Gardening"
+      - title: "Painting/Drawing"
+      - title: "Meditation"
+      - title: "Baking"
+  - title: "Physical Activity"
+    children:
+      - title: "Skateboarding"
+      - title: "Kickboxing"
+      - title: "Swimming"
+      - title: "Basketball"
+      - title: "Soccer"
+  - title: "The Arts"
+    children:
+      - title: "Singing"
+      - title: "Piano"
+      - title: "Theatre"
+      - title: "Dance"
+      - title: "Guitar"

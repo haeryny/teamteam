@@ -1,3 +1,18 @@
+---
+title: Workouts
+layout: single
+classes: wide
+sidebar:
+  title: "Full Routine"
+  nav: workout-bar
+tagline: "It's time to get swole."
+header:
+  overlay_image: /assets/images/Arnold.jpeg
+  caption: "Photo credit: [**Cool Material**](https://coolmaterial.com/feature/best-workout-hacks/)"
+  actions:
+    - label: "More Info"
+      url: "https://musclewiki.com/"
+---
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +22,6 @@
 </head>
 <body>
 
-<p>Wait for the videos to load!</p>
 <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Instructions')">Instructions</button>
     <button class="tablinks" onclick="openCity(event, 'Back/Biceps')">Back/Biceps</button>

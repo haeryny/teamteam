@@ -1,3 +1,16 @@
+---
+
+layout: home
+title: Homework
+header:
+  overlay_image: /assets/images/homework.gif
+  caption: "Photo credit: [**Jocelyn Chan**](https://tenor.com/view/aesthetic-homework-anime-writing-gif-17124856)"
+  actions:
+    - label: "Studying Tips"
+      url: "https://summer.harvard.edu/blog/top-10-study-tips-to-study-like-a-harvard-student/"
+
+---
+
 <head>
 <style>
 * {box-sizing: border-box;}
