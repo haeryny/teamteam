@@ -1,15 +1,15 @@
 # main links
 main:
   - title: "Home"
-    url: /index/
+    url: https://haeryny.github.io/teamteam/
   - title: "Workouts"
-    url: /workouts/
+    url: https://haeryny.github.io/teamteam/workouts/
   - title: "Extracurriculars"
-    url: /extracurriculars/
+    url: https://haeryny.github.io/teamteam/extracurriculars/
   - title: "Self Care"
-    url: /selfcare/
+    url: https://haeryny.github.io/teamteam/selfcare/
   - title: "Homework"
-    url: /homework/
+    url: https://haeryny.github.io/teamteam/homework/
 
 workout-bar:
   - title: "Back/Biceps"
