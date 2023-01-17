@@ -127,32 +127,77 @@ body {font-family: Verdana, sans-serif;}
 # Homework
 > This is the homework you have for each class and what day it is due. 
 
-## Name of Class
-<input type="text" name="entry-title" id="entry-title" class="entry-text-title" placeholder="Name of Class"/>
+<table>
+    <tr>
+        <th><label for="nameOfClass">Name of Class</label></th>
+        <th><label for="date">Date</label></th>
+        <th><label for="homeworkTitle">Homework Title</label></th>
+    </tr>
+    <tr>
+        <td><input type="text" name="nameOfClass" id="name" required></td>
+        <td><input type="date" name="date" id="date" placeholder="date" required></td>
+        <td><input type="text" name="homeworkTitle" id="homeworkTitle" required></td>
+        <td ><button onclick="create_User()">Create</button></td>
+    </tr>
+</table>
 
-## Date due
-<input type="text" name="entry-title" id="entry-title" class="date" placeholder="Date"/>
+<table>
+  <thead>
+  <tr>
+    <th>Name of Class</th>
+    <th>Date</th>
+    <th>Homework Title</th>
+  </tr>
+  </thead>
+  <tbody id="table">
+  </tbody>
+</table>
 
-## Homework
-<input type="text" name="entry-title" id="entry-title" class="entry-text-title" placeholder="Homework Title"/>
+// Convert JSON string to JSON object
+const data = JSON.parse(json);
 
-<button class="btn-main entry-submit-btn" type="submit">Submit</button>
+// prepare HTML result container for new output
+const table = document.getElementById("table");
+data.forEach(user => {
+    // build a row for each user
+    const tr = document.createElement("tr");
 
-<section class="section sectionEntryResults" id="entryResultsSection">
-      <h2>Homework Assignments</h2>
-      <div class="container">
-        <div class="container-row entryResultRow"></div>
-      </div>
-</section>
-Name of Class: AP CSP
+    // td's to build out each column of data
+    const name = document.createElement("td");
+    const id = document.createElement("td");
+    const action = document.createElement("td");
+           
+    // add content from user data          
+    name.innerHTML = user._name; 
+    id.innerHTML = user._uid; 
 
-Date: 1/9
+    // add action for update button
+    var updateBtn = document.createElement('input');
+    updateBtn.type = "button";
+    updateBtn.className = "button";
+    updateBtn.value = "Update";
+    updateBtn.style = "margin-right:16px";
+    updateBtn.onclick = function () {
+      alert("Update: " + user._uid);
+    };
+    action.appendChild(updateBtn);
 
-Homework: College Board CPT Grading
+    // add action for delete button
+    var deleteBtn = document.createElement('input');
+    deleteBtn.type = "button";
+    deleteBtn.className = "button";
+    deleteBtn.value = "Delete";
+    deleteBtn.style = "margin-right:16px"
+    deleteBtn.onclick = function () {
+      alert("Delete: " + user._uid);
+    };
+    action.appendChild(deleteBtn);  
 
+    // add data to row
+    tr.appendChild(name);
+    tr.appendChild(id);
+    tr.appendChild(action);
 
-Name of Class: AP Chemistry
-
-Date: 1/9
-
-Homework Title: Questions 1-8
+    // add row to table
+    table.appendChild(tr);
+});
