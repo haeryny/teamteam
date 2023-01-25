@@ -1,5 +1,5 @@
 ---
-title: Workouts
+title: Personality Matcher 
 layout: single
 classes: wide
 sidebar:

@@ -2,7 +2,7 @@
 
 layout: single
 classes: wide
-title: Self-care
+title: Guide to Take Care of a Dog
 header:
   overlay_image: /assets/images/selfcare.jpeg
   caption: "Photo credit: [**capitalizemytitle.com**](https://capitalizemytitle.com/ufaqs/is-new-year-capitalized/)"

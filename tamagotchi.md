@@ -1,7 +1,7 @@
 ---
 
 layout: home
-title: Homework
+title: Tamagotchi
 header:
   overlay_image: /assets/images/homework.gif
   caption: "Photo credit: [**Jocelyn Chan**](https://tenor.com/view/aesthetic-homework-anime-writing-gif-17124856)"

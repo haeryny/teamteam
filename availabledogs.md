@@ -1,7 +1,7 @@
 ---
 
 layout: single
-title: Extracurriculars
+title: Available Dogs 
 sidebar:
   title: "What type of Activity are you looking for?"
   nav: extracurricular-navbar
