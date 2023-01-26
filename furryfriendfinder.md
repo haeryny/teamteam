@@ -22,20 +22,12 @@ header:
 
 </script>
 
-<fieldset>
-    <legend>Select a personality type:</legend>
-    <div>
-      <input type="radio" id="huey" name="drone" value="huey"
-             checked>
-      <label for="huey">Energetic</label>
-    </div>
-    <div>
-      <input type="radio" id="dewey" name="drone" value="dewey">
-      <label for="dewey">Lazy</label>
-    </div>
-    <div>
-      <input type="radio" id="louie" name="drone" value="louie">
-      <label for="louie">Aggressive</label>
-    </div>
-</fieldset>
+<form>
 
+  <div class="user-check-input">
+    <input class="personality-input" type="radio" value="Playful" name="personality" id="playful">
+    <label class="user-check-label" for="playful">Playful</label>
+  </div>
+
+
+</form>
