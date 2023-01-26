@@ -4,7 +4,7 @@ layout: single
 title: Available Dogs 
 tagline: "Check out all the dogs that still need homes!"
 header:
-  overlay_image: /assets/images/availabledogs.jpeg
+  overlay_image: /assets/images/availabledogs.jpg
   caption: "Photo credit: [**Fine Art America**](https://fineartamerica.com/featured/various-dogs-horizontal-web-banner-susan-schmitz.html)"
 
 ---
