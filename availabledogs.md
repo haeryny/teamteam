@@ -2,16 +2,10 @@
 
 layout: single
 title: Available Dogs 
-sidebar:
-  title: "What type of Activity are you looking for?"
-  nav: extracurricular-navbar
-tagline: "Grow your mind and body"
+tagline: "Check out all the dogs that still need homes!"
 header:
-  overlay_image: /assets/images/extracurriculars.jpeg
-  caption: "Photo credit: [**Cincinnati Magazine**](https://www.cincinnatimagazine.com/article/extracurricular-activities-provided-a-lifeline/)"
-  actions:
-    - label: "More Activities"
-      url: "https://blog.prepscholar.com/list-of-extracurricular-activities-examples"
+  overlay_image: /assets/images/availabledogs.jpeg
+  caption: "Photo credit: [**Fine Art America**](https://fineartamerica.com/featured/various-dogs-horizontal-web-banner-susan-schmitz.html)"
 
 ---
 

@@ -1,15 +1,15 @@
 # main links
 main:
   - title: "Home"
-    url: https://haeryny.github.io/furryfriendfinder/
+    url: https://haeryny.github.io/
   - title: "Adoptable Dogs"
     url: https://haeryny.github.io/teamteam/availabledogs/
   - title: "Matcher"
     url: https://haeryny.github.io/teamteam/matcher/
   - title: "Tamagotchi"
     url: https://haeryny.github.io/teamteam/tamagotchi/
-  - title: "Care Guide"
-    url: https://haeryny.github.io/teamteam/careguide/
+  - title: "Info Page"
+    url: https://haeryny.github.io/teamteam/infopage/
 
 workout-bar:
   - title: "Back/Biceps"
@@ -43,25 +43,25 @@ workout-bar:
       - title: "Laying Leg Curls"
       - title: "Bulgarian Split Squats"
 
-extracurricular-navbar:
-  - title: "Mind Growth/Leisure"
-    children:
-      - title: "Reading"
-      - title: "Gardening"
-      - title: "Painting/Drawing"
-      - title: "Meditation"
-      - title: "Baking"
-  - title: "Physical Activity"
-    children:
-      - title: "Skateboarding"
-      - title: "Kickboxing"
-      - title: "Swimming"
-      - title: "Basketball"
-      - title: "Soccer"
-  - title: "The Arts"
-    children:
-      - title: "Singing"
-      - title: "Piano"
-      - title: "Theatre"
-      - title: "Dance"
-      - title: "Guitar"
+# extracurricular-navbar:
+#   - title: "Mind Growth/Leisure"
+#     children:
+#       - title: "Reading"
+#       - title: "Gardening"
+#       - title: "Painting/Drawing"
+#       - title: "Meditation"
+#       - title: "Baking"
+#   - title: "Physical Activity"
+#     children:
+#       - title: "Skateboarding"
+#       - title: "Kickboxing"
+#       - title: "Swimming"
+#       - title: "Basketball"
+#       - title: "Soccer"
+#   - title: "The Arts"
+#     children:
+#       - title: "Singing"
+#       - title: "Piano"
+#       - title: "Theatre"
+#       - title: "Dance"
+#       - title: "Guitar"
