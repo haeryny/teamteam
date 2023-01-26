@@ -1,17 +1,15 @@
 # main links
 main:
   - title: "Home"
-    url: https://haeryny.github.io/teamteam/
-  - title: "Workouts"
-    url: https://haeryny.github.io/teamteam/workouts/
-  - title: "Extracurriculars"
-    url: https://haeryny.github.io/teamteam/extracurriculars/
-  - title: "Self Care"
-    url: https://haeryny.github.io/teamteam/selfcare/
-  - title: "Homework"
-    url: https://haeryny.github.io/teamteam/homework/
-  - title: "Furry Friend Finder"
-    url: https://haeryny.github.io/teamteam/furryfriendfinder/
+    url: https://haeryny.github.io/furryfriendfinder/
+  - title: "Adoptable Dogs"
+    url: https://haeryny.github.io/teamteam/availabledogs/
+  - title: "Matcher"
+    url: https://haeryny.github.io/teamteam/matcher/
+  - title: "Tamagotchi"
+    url: https://haeryny.github.io/teamteam/tamagotchi/
+  - title: "Care Guide"
+    url: https://haeryny.github.io/teamteam/careguide/
 
 workout-bar:
   - title: "Back/Biceps"
