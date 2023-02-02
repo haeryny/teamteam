@@ -2,16 +2,14 @@
 main:
   - title: "Home"
     url: https://haeryny.github.io/teamteam/
-  - title: "Workouts"
-    url: https://haeryny.github.io/teamteam/workouts/
-  - title: "Extracurriculars"
-    url: https://haeryny.github.io/teamteam/extracurriculars/
-  - title: "Self Care"
-    url: https://haeryny.github.io/teamteam/selfcare/
-  - title: "Homework"
-    url: https://haeryny.github.io/teamteam/homework/
-  - title: "Fluffy Friend Finder"
-    url: https://haeryny.github.io/teamteam/fluffyfriendfinder/
+  - title: "Adoptable Dogs"
+    url: https://haeryny.github.io/teamteam/availabledogs/
+  - title: "Matcher"
+    url: https://haeryny.github.io/teamteam/matcher/
+  - title: "Tamagotchi"
+    url: https://haeryny.github.io/teamteam/tamagotchi/
+  - title: "Info Page"
+    url: https://haeryny.github.io/teamteam/infopage/
 
 workout-bar:
   - title: "Back/Biceps"
@@ -45,25 +43,25 @@ workout-bar:
       - title: "Laying Leg Curls"
       - title: "Bulgarian Split Squats"
 
-extracurricular-navbar:
-  - title: "Mind Growth/Leisure"
-    children:
-      - title: "Reading"
-      - title: "Gardening"
-      - title: "Painting/Drawing"
-      - title: "Meditation"
-      - title: "Baking"
-  - title: "Physical Activity"
-    children:
-      - title: "Skateboarding"
-      - title: "Kickboxing"
-      - title: "Swimming"
-      - title: "Basketball"
-      - title: "Soccer"
-  - title: "The Arts"
-    children:
-      - title: "Singing"
-      - title: "Piano"
-      - title: "Theatre"
-      - title: "Dance"
-      - title: "Guitar"
+# extracurricular-navbar:
+#   - title: "Mind Growth/Leisure"
+#     children:
+#       - title: "Reading"
+#       - title: "Gardening"
+#       - title: "Painting/Drawing"
+#       - title: "Meditation"
+#       - title: "Baking"
+#   - title: "Physical Activity"
+#     children:
+#       - title: "Skateboarding"
+#       - title: "Kickboxing"
+#       - title: "Swimming"
+#       - title: "Basketball"
+#       - title: "Soccer"
+#   - title: "The Arts"
+#     children:
+#       - title: "Singing"
+#       - title: "Piano"
+#       - title: "Theatre"
+#       - title: "Dance"
+#       - title: "Guitar"
