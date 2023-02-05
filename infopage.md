@@ -32,11 +32,6 @@ header:
       <div class="container">
         <div class="container-row container-row-journal">
           <div class="container-item container-item-journal">
-
-  <!-- This creates a collapsible, so you can expand it when you want to create a new journal entry. -->
-  <button type="button" class="collapsible">Create a New Journal Entry</button>
-            <div class="content">
-                <br>
                 
   <form id="entryForm" action="">
 
@@ -79,7 +74,6 @@ header:
   <button class="btn-main entry-submit-btn" type="submit">Submit</button>
                 </form>
 
-  </div>
 
   </div>
 
