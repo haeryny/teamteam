@@ -71,7 +71,7 @@ h3 {
 </head>
 <body>
 
-<h2 style="text-align:center">Product Card</h2>
+<h2 style="text-align:center">Adopt a Dog Today!</h2>
 
 <div class="row">
   <div class="card">
@@ -95,10 +95,10 @@ h3 {
   <p>Hound-Terrier Blend</p>
   <p><button>Learn More</button></p>
 </div>
-  <div class="card">
+  <!-- <div class="card">
   <img src="https://goldenbondrescue.com/wp-content/uploads/2022/11/Cody-3791.jpg" alt="Denim Jeans" width="200" height="250">
   <h1>Honey</h1>
   <p class="price">$200</p>
   <p>Retriever Blend</p>
   <p><button>Learn More</button></p>
-</div>
+</div> -->
