@@ -2,13 +2,13 @@
 main:
   - title: "Home"
     url: https://haeryny.github.io/teamteam/
-  - title: "Adoptable Dogs"
+  - title: "Adopt a Dog"
     url: https://haeryny.github.io/teamteam/availabledogs/
   - title: "Matcher"
     url: https://haeryny.github.io/teamteam/matcher/
-  - title: "Tamagotchi"
+  - title: "Diagnose Your Dog"
     url: https://haeryny.github.io/teamteam/tamagotchi/
-  - title: "Info Page"
+  - title: "Blog Your Dog"
     url: https://haeryny.github.io/teamteam/infopage/
 
 workout-bar:
