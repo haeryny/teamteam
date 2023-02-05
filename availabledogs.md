@@ -88,13 +88,13 @@ h3 {
     <p>Shepherd-Rottweiler Blend</p>
     <p><button>Learn More</button></p>
   </div>
-  <div class="card">
+  <!-- <div class="card">
   <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55604262/2/?bust=1652662246&width=720" alt="Denim Jeans" width="200" height="250">
   <h1>Harry</h1>
   <p class="price">$160</p>
   <p>Hound-Terrier Blend</p>
   <p><button>Learn More</button></p>
-</div>
+</div> -->
   <!-- <div class="card">
   <img src="https://goldenbondrescue.com/wp-content/uploads/2022/11/Cody-3791.jpg" alt="Denim Jeans" width="200" height="250">
   <h1>Honey</h1>
