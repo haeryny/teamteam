@@ -111,7 +111,7 @@ span.price {
 <body>
 
 <h2>Payment Form</h2>
-</p>
+
 <div class="row">
   <div class="col-75">
     <div class="container">
