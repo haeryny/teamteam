@@ -1,15 +1,15 @@
 # main links
 main:
   - title: "Home"
-    url: https://haeryny.github.io/teamteam/
+    url: /fluffyfriendfinder/
   - title: "Adopt a Dog"
-    url: https://haeryny.github.io/teamteam/availabledogs/
+    url: /availabledogs/
   - title: "Matcher"
-    url: https://haeryny.github.io/teamteam/matcher/
+    url: /matcher/
   - title: "Diagnose Your Dog"
-    url: https://haeryny.github.io/teamteam/tamagotchi/
+    url: /tamagotchi/
   - title: "Blog Your Dog"
-    url: https://haeryny.github.io/teamteam/infopage/
+    url: /infopage/
 
 workout-bar:
   - title: "Back/Biceps"

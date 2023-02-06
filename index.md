@@ -1,5 +1,5 @@
 ---
-title: Furry Friend Finder
+title: Fluffy Friend Finder
 layout: single
 tagline: "Find a fluffy buddy"
 header:

@@ -40,6 +40,7 @@ h1 {
 
 h2 {
   font-size: $h-size-2;
+  color: red;
 }
 
 h3 {
@@ -61,10 +62,7 @@ h6 {
 small,
 .small {
   font-size: $type-size-6;
-}
-
-p {
-  margin-bottom: 1.3em;
+  padding: 1.5rem;
 }
 
 u,
@@ -82,7 +80,6 @@ del a {
 
 /* reduce orphans and widows when printing */
 
-p,
 pre,
 blockquote,
 ul,
@@ -317,7 +314,6 @@ i,
 strong,
 em,
 blockquote,
-p,
 q,
 span,
 figure,
