@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Furry Friend Finder"
+title                    : "Fluffy Friend Finder"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Furry Friend Finder"
+name                     : "Fluffy Friend Finder"
 description              : "Man's Best Friend"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
