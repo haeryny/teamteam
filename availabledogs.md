@@ -19,7 +19,7 @@ header:
 }
 
 .row {
-  display: flex;
+  display: center;
 }
 
 .column {
@@ -32,6 +32,7 @@ h1 {
 h3 {
   text-align: center;
 }
+
 </style>
 </head>
 <body>
