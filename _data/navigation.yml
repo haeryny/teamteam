@@ -2,13 +2,13 @@
 main:
   - title: "Home"
     url: /fluffyfriendfinder/
-  - title: "Adoptable Dogs"
+  - title: "Adopt a Dog"
     url: /availabledogs/
   - title: "Matcher"
     url: /matcher/
-  - title: "Tamagotchi"
-    url: tamagotchi/
-  - title: "Info Page"
+  - title: "Diagnose Your Dog"
+    url: /tamagotchi/
+  - title: "Blog Your Dog"
     url: /infopage/
 
 workout-bar:
