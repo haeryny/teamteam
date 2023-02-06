@@ -80,7 +80,7 @@ h3 {
       <h1>Joe</h1>
       <p class="price">$200</p>
       <p> Labrador Retriever Blend </p>
-      <a href="https://haeryny.github.io/teamteam/doginfo/"<p><button>Learn More</button></p></a>
+      <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
       <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
   	</div>
@@ -89,7 +89,7 @@ h3 {
     <h1>Bean</h1>
     <p class="price">$180</p>
     <p>Shepherd-Rottweiler Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/"<p><button>Learn More</button></p></a>
+    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
     <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
   </div>
@@ -98,7 +98,7 @@ h3 {
   <h1>Harry</h1>
   <p class="price">$160</p>
   <p>Hound-Terrier Blend</p>
-  <a href="https://haeryny.github.io/teamteam/doginfo/"<p><button>Learn More</button></p></a>
+  <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
   <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
 </div>
@@ -110,7 +110,7 @@ h3 {
   <h1>Honey</h1>
   <p class="price">$200</p>
   <p>Retriever Blend</p>
-  <a href="https://haeryny.github.io/teamteam/doginfo/"<p><button>Learn More</button></p></a>
+  <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
   <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
 </div>
@@ -119,7 +119,7 @@ h3 {
     <h1>George</h1>
     <p class="price">$250</p>
     <p>Retriever Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/"<p><button>Learn More</button></p></a>
+    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
     <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
   </div>
@@ -128,7 +128,7 @@ h3 {
   <h1>Julie</h1>
   <p class="price">$250</p>
   <p>Black Mouth Cur Blend</p>
-  <a href="https://haeryny.github.io/teamteam/doginfo/"<p><button>Learn More</button></p></a>
+  <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
   <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
 </div>
