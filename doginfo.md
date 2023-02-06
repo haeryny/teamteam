@@ -1,4 +1,4 @@
-<p>Database API</p>
+<p>YOUR NEW DOG'S INFO</p>
 
 <table>
   <thead>
