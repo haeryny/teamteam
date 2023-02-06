@@ -8,6 +8,7 @@ header:
   caption: "Photo credit: [**Fine Art America**](https://fineartamerica.com/featured/various-dogs-horizontal-web-banner-susan-schmitz.html)"
 
 ---
+<a href="https://haeryny.github.io/teamteam/availabledogs/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
 
 <html>
 <head>
