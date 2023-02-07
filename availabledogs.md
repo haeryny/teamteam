@@ -75,46 +75,55 @@ h3 {
 <body>
 
 <div class="row">
+  <div class="column">
   <div class="card">
-  	<div class="column">
-      <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59442857/1/?bust=1674344452" alt="Denim Jeans" width="400" height="450">
-      <h1>Joe</h1>
-      <p class="price">$200</p>
-      <p> Labrador Retriever Blend </p>
-      <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-      <p> Add to Cart </p>
+    <img src="https://goldenbondrescue.com/wp-content/uploads/2022/11/Cody-3791.jpg" alt="Denim Jeans" style= "width:100%">
+    <h1>Joe</h1>
+    <p class="price">$200</p>
+    <p>Labrador Blend</p>
+    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+    <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  	</div>
+  </div>
+  </div>
+  <div class="column">
   <div class="card">
-    <img src="https://www.dogbreedinfo.com/images31/ShepweilerGermanShepherdRottweilerMixedBreedDogMarshall2HalfYearsOld1.jpg" alt="Denim Jeans" width="400" height="450">
+    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48740896/1/?bust=1626106588" alt="Denim Jeans" width="400" height="450">
     <h1>Bean</h1>
     <p class="price">$180</p>
     <p>Shepherd-Rottweiler Blend</p>
     <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
     <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  <div class="card">
-  <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55604262/2/?bust=1652662246&width=720" alt="Denim Jeans" width="400" height="450">
-  <h1>Harry</h1>
-  <p class="price">$160</p>
-  <p>Hound-Terrier Blend</p>
-  <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-  <p> Add to Cart </p>
+    </div>
+    </div>
+    <div class="column">
+    <div class="card">
+    <img src="https://cdn-fastly.petguide.com/media/2022/02/16/8258005/black-mouth-cur.jpg?size=720x845&nocrop=1" alt="Denim Jeans" width="400" height="450">
+    <h1>Harry</h1>
+    <p class="price">$160</p>
+    <p>Hound-Terrier Blend</p>
+    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+    <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
+  </div>
+  </div>
 </div>
 
 <div class="row">
+  <div class="column">
   <div class="card">
-  	<div class="column">
-  <img src="https://goldenbondrescue.com/wp-content/uploads/2022/11/Cody-3791.jpg" alt="Denim Jeans" width="400" height="450">
-  <h1>Honey</h1>
-  <p class="price">$200</p>
-  <p>Retriever Blend</p>
-  <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-  <p> Add to Cart </p>
+    <img src="https://goldenbondrescue.com/wp-content/uploads/2022/11/Cody-3791.jpg" alt="Denim Jeans" style= "width:100%">
+    <h1>Honey</h1>
+    <p class="price">$200</p>
+    <p>Retriever Blend</p>
+    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+    <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-</div>
+  </div>
+  </div>
+  
+  <div class="column">
   <div class="card">
     <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48740896/1/?bust=1626106588" alt="Denim Jeans" width="400" height="450">
     <h1>George</h1>
@@ -123,14 +132,18 @@ h3 {
     <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
     <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  <div class="card">
-  <img src="https://i.pinimg.com/originals/6c/a6/30/6ca630545577914ec9394e8742b4539a.jpg" alt="Denim Jeans" width="400" height="450">
-  <h1>Julie</h1>
-  <p class="price">$250</p>
-  <p>Black Mouth Cur Blend</p>
-  <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-  <p> Add to Cart </p>
+    </div>
+    </div>
+    <div class="column">
+    <div class="card">
+    <img src="https://cdn-fastly.petguide.com/media/2022/02/16/8258005/black-mouth-cur.jpg?size=720x845&nocrop=1" alt="Denim Jeans" width="400" height="450">
+    <h1>Julie</h1>
+    <p class="price">$250</p>
+    <p>Black Mouth Cur Blend</p>
+    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+    <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
+  </div>
+  </div>
 </div>
  
