@@ -46,8 +46,6 @@ h3 {
   margin: auto;
   text-align: center;
   font-family: arial;
-  width="200"; 
-  height="650";
 }
 
 .price {
@@ -77,7 +75,7 @@ h3 {
 <div class="row">
   <div class="column">
   <div class="card">
-    <img src="https://goldenbondrescue.com/wp-content/uploads/2022/11/Cody-3791.jpg" alt="Denim Jeans" style= "width:100%">
+    <img src="https://goldenbondrescue.com/wp-content/uploads/2022/11/Trigger-3784-scaled.jpg" alt="Joe" style= "width:100%">
     <h1>Joe</h1>
     <p class="price">$200</p>
     <p>Labrador Blend</p>
@@ -88,7 +86,7 @@ h3 {
   </div>
   <div class="column">
   <div class="card">
-    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48740896/1/?bust=1626106588" alt="Denim Jeans" width="400" height="450">
+    <img src="https://www.dogbreedinfo.com/images31/ShepweilerGermanShepherdRottweilerMixedBreedDogMarshall2HalfYearsOld1.jpg" alt="Bean" width="400" height="450">
     <h1>Bean</h1>
     <p class="price">$180</p>
     <p>Shepherd-Rottweiler Blend</p>
@@ -99,7 +97,7 @@ h3 {
     </div>
     <div class="column">
     <div class="card">
-    <img src="https://cdn-fastly.petguide.com/media/2022/02/16/8258005/black-mouth-cur.jpg?size=720x845&nocrop=1" alt="Denim Jeans" width="400" height="450">
+    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55604262/2/?bust=1652662246&width=720" alt="Harry" width="400" height="450">
     <h1>Harry</h1>
     <p class="price">$160</p>
     <p>Hound-Terrier Blend</p>
