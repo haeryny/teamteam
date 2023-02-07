@@ -32,11 +32,6 @@ header:
       <div class="container">
         <div class="container-row container-row-journal">
           <div class="container-item container-item-journal">
-
-  <!-- This creates a collapsible, so you can expand it when you want to create a new journal entry. -->
-  <button type="button" class="collapsible">Create a New Journal Entry</button>
-            <div class="content">
-                <br>
                 
   <form id="entryForm" action="">
 
@@ -51,7 +46,7 @@ header:
 
   <!-- Mood, this is where the user enters in their mood through a slider and the emojis change -->
   <label for="entry-title" class="journal-label">Dog's Mood Rating</label>
-                    <p class="description">😁 Rate your dog's mood on a scale from 1-10 :)</p>
+                    <p class="description">Rate your dog's mood on a scale from 1-10 :)</p>
                     <div class="slidecontainer">
                       <p id="output" class="output">5</p>
                       <input type="range" min="1" max="10" value="5" class="slider" id="mood">
@@ -62,7 +57,7 @@ header:
                     
   <!-- Here's the main section of the journal, where the user writes about their day for the journal -->
   <label for="entry" class="journal-label">Journal about your dog's day here...</label>
-                    <textarea name="daily-entry" id="entry" class="entry-text-box" placeholder="What happened to your dog today? 💭"></textarea>
+                    <textarea name="daily-entry" id="entry" class="entry-text-box" placeholder="What happened to your dog today?"></textarea>
 
   <!-- Here the user can enter three gratitudes about their day to improve their social emotional health -->
   <label for="entry" class="journal-label">What did it eat today</label>
@@ -79,7 +74,6 @@ header:
   <button class="btn-main entry-submit-btn" type="submit">Submit</button>
                 </form>
 
-  </div>
 
   </div>
 
