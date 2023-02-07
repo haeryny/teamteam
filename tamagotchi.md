@@ -150,7 +150,8 @@ body {font-family: Verdan a, sans-serif;}
     <tr>
         <td><input type="text" name="nameOfClass" id="name" required></td>
         <td><input type="date" name="date" id="date" placeholder="date" required></td>
-        <td><input type="text" name="homeworkTitle" id="homeworkTitle" required></td>
+        <td><input type="text" name="homeworkTitle"
+        id="homeworkTitle" required></td>
         <td ><button onclick="create_User()">Create</button></td>
     </tr>
 </table>
@@ -173,7 +174,8 @@ body {font-family: Verdan a, sans-serif;}
   </tr>
 </table>
 
-print ("Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.")
+
+ console.log ("Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.");
 
 a = "bleeding"
 b = "cough"
@@ -241,7 +243,7 @@ for index in range(len(correctsymp)):
 if len(correctsymp) == 0:
   print("you do not have any illnesses!")
 
-  
+
 
 diagnoser_list = [covid_symp_counter, flu_symp_counter, strep_symp_counter, depression_symp_counter]
 diagnoser_max = 0
@@ -269,3 +271,7 @@ if diagnoser_max == strep_symp_counter:
 if diagnoser_max == depression_symp_counter:
     print("You might have depression")
     print("Go see a therapist for help.")
+
+    print("Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.                                                                                                                                                         ") 
+
+<div>
