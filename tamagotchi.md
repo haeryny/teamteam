@@ -1,10 +1,10 @@
 ---
 
 layout: home
-title: Tamagotchi
+title: Diagnosis
 header:
-  overlay_image: /assets/images/dog at vet.jpeg
-  caption: "Photo credit: [**Joceln Chan**](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dailypaws.com%2Fliving-with-pets%2Fveterinarian%2Fhard-to-visit-vet&psig=AOvVaw1U-TPrcaZod_R26CVcKLQ0&ust=1675547153233000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCg5tmp-vwCFQAAAAAdAAAAABAI)" 
+  overlay_image: /assets/images/grass dog.jpeg
+  caption: "Photo credit: [**Joceln Chan**](https://tractive.com/blog/en/safety/grass-awns-can-be-deadly-dangerous-for-your-dog-2)" 
 
   actions:
     - label: "Studying Tips"
@@ -89,7 +89,7 @@ body {font-family: Verdan a, sans-serif;}
 </head>
 <body>
 
-<h1>January 2023</h1>
+<h1>Febuary 2023</h1>
 
 <ul class="weekdays">
   <li>Mo</li>
@@ -131,8 +131,6 @@ body {font-family: Verdan a, sans-serif;}
   <li>26</li>
   <li>27</li>
   <li>28</li>
-  <li>30</li>
-  <li>31</li>
 </ul>
 
 </body>
