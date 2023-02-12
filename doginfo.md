@@ -22,7 +22,7 @@
   const resultContainer = document.getElementById("result");
 
   // prepare fetch options
-  const url = "http://172.19.114.39:8086/api/users/";
+  const url = "http://fluffyfriendfinder.nighthawkcodingsociety.com/api/users/";
   const options = {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
@@ -95,3 +95,4 @@
     resultContainer.appendChild(tr);
   });
 </script>
+
