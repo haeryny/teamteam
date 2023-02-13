@@ -17,6 +17,7 @@ header:
     <button class="tablinks" onclick="openCity(event, 'Excercise')">Exercise</button>
     <button class="tablinks" onclick="openCity(event, 'Dieting')">Dieting</button>
     <button class="tablinks" onclick="openCity(event, 'Conditions')">Conditions</button>
+    <button class="tablinks" onclick="openCity(event, 'Journal')">Journal</button>
 </div>
 
 <div id="Excercise" class="tabcontent">
@@ -61,28 +62,8 @@ header:
     <p>Make sure to remember your dog's conditions and to give medicine by following instructions from the vet. </p>
 </div>
 
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-   
-</body>
-</html> 
-
-<hr>
-<html>
-<body> 
+<div id="Journal" class="tabcontent">
+    <body> 
     <header>
       <!-- Pressing Submit will change the title of the journal to [insert name]'s Journal to make it more personal -->
       <h1 class="title" id="journal-name">My Dog's Journal</h1>
@@ -127,10 +108,10 @@ function openCity(evt, cityName) {
                     <textarea id="entry2" class="gratitude-text-box" placeholder="Lunch"></textarea>
                     <textarea id="entry3" class="gratitude-text-box" placeholder="Dinner"></textarea>
 
-  <button type="button" class="grat-collapsible">Dog Quotes of the Day</button>
+  <button type="button" class="grat-collapsible">Dog Image of the Day</button>
                     <div class="grat-content">
                       <input class="btn-light gratitude-submit-btn" type="button" onClick="gratitudeGen()" Value="Press to generate a dog quote"/>
-                      <p class="description">Gratitude question: <br>
+                      <p class="description">Dog Image: <br>
                         <span id="gratituderesult"></span>
                       </p>
                     </div>
@@ -158,6 +139,29 @@ function openCity(evt, cityName) {
       </div>
     </section>
 
-  <script src="code.js"></script>
+  <script src="journal.js"></script>
   </body>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
+
+
+
 

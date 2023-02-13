@@ -141,17 +141,15 @@ slider.oninput = function() {
 // API gratitude
 function gratitudeGen() {
   const options = {
-      method: 'GET',
-      headers: {
-          'X-RapidAPI-Key': '222daebd02msh197e0db183672fap17cc9djsn8a1f2f813e5b',
-          'X-RapidAPI-Host': 'gratitude-questions.p.rapidapi.com'
-      }
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '217acfa59emsh9a56b5c7ec9c672p11520bjsnbe23d137f1c8',
+      'X-RapidAPI-Host': 'placedog.p.rapidapi.com'
+    }
   };
-
-  fetch('https://gratitude-questions.p.rapidapi.com/question', options)
-      .then(response => response.json())
-      // .then(response => console.log(response))
-      // .then(response => (question = response))
-      .then(response => (document.getElementById("gratituderesult").innerHTML = response['question']))
-      .catch(err => console.error(err));
+  
+  fetch('https://placedog.p.rapidapi.com/300/200', options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .catch(err => console.error(err));
 }
