@@ -110,7 +110,7 @@ header:
 
   <button type="button" class="grat-collapsible">Dog Image of the Day</button>
                     <div class="grat-content">
-                      <input class="btn-light gratitude-submit-btn" type="button" onClick="gratitudeGen()" Value="Press to generate a dog quote"/>
+                      <input class="btn-light gratitude-submit-btn" type="button" onClick="gratitudeGen()" Value="Press to generate a dog image"/>
                       <p class="description">Dog Image: <br>
                         <span id="gratituderesult"></span>
                       </p>
