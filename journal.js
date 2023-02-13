@@ -138,8 +138,8 @@ slider.oninput = function() {
   }
 }
 
-// API gratitude
-function gratitudeGen() {
+// API dogimage
+function dogimage() {
   const options = {
     method: 'GET',
     headers: {
