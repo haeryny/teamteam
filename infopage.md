@@ -10,18 +10,60 @@ header:
     - label: "Donate"
       url: "https://www.nationalhumanesociety.org/donations-helping-animals?gclid=Cj0KCQiA_bieBhDSARIsADU4zLevTGhcYmgdFMD1zp4eVCv6sy3HWt4q7cQZ24-GJ_OaOdyE9ubzYSwaAqajEALw_wcB"
 ---
+<html>
+<body>
 
 <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Instructions')">General</button>
-    <button class="tablinks" onclick="openCity(event, 'Back/Biceps')">Exercise</button>
-    <button class="tablinks" onclick="openCity(event, 'Chest/Triceps')">Dieting</button>
-    <button class="tablinks" onclick="openCity(event, 'Shoulders/Abs')">Conditions</button>
+    <button class="tablinks" onclick="openCity(event, 'Excercise')">Exercise</button>
+    <button class="tablinks" onclick="openCity(event, 'Dieting')">Dieting</button>
+    <button class="tablinks" onclick="openCity(event, 'Conditions')">Conditions</button>
+    <button class="tablinks" onclick="openCity(event, 'Journal')">Journal</button>
 </div>
 
+<div id="Excercise" class="tabcontent">
+    <h3>Excercise</h3>
+    <p>Excercise for your dog is very important!</p>
+    <hr>
+    <p>Each and every dog needs their own unique excercise routine. Mostly bigger dogs need more walks and runs while smaller dogs are allowed to rest more.</p>
+    <p>Bigger Dogs</p>
+    <ul>
+      <li>Five to six walks a day: after breakfast, lunch, dinner</li>
+      <li>Three runs a day (playing fetch is also very good)</li>
+      <li>If accessible, going swimming</li>
+    </ul>
+    <p>Smaller Dogs</p>
+    <ul>
+      <li>Two to four walks a day: after breakfast, lunch, dinner</li>
+      <li>One run a day (playing fetch is also very good)</li>
+      <li>If accessible, going swimming</li>
+    </ul>
+</div>
 
+<div id="Dieting" class="tabcontent">
+    <h3>Dieting</h3>
+    <p>Your dog's diet is also very crucial.</p>
+    <hr>
+    <p>Each and every dog has different things it can eat. </p>
+    <p>Absolutely Cannot Eat</p>
+    <ul>
+      <li>Chocolate</li>
+      <li>Fruit</li>
+    </ul>
+    <p>Reccomended to Eat</p>
+    <ul>
+      <li>Kibble</li>
+      <li>Meat</li>
+      <li>Eggs</li>
+    </ul>
+</div>
 
-<html>
-<body> 
+<div id="Conditions" class="tabcontent">
+    <h3>Conditions</h3>
+    <p>Make sure to remember your dog's conditions and to give medicine by following instructions from the vet. </p>
+</div>
+
+<div id="Journal" class="tabcontent">
+    <body> 
     <header>
       <!-- Pressing Submit will change the title of the journal to [insert name]'s Journal to make it more personal -->
       <h1 class="title" id="journal-name">My Dog's Journal</h1>
@@ -36,7 +78,7 @@ header:
   <form id="entryForm" action="">
 
   <!-- Journal Entry Name -->
-  <label for="entry-title" class="journal-label">New Journal Entry</label>
+  <label for="entry-title" class="journal-label"></label>
                     <p class="description">Name Idea: Funny Event that happened today</p>
                     <input type="text" name="entry-title" id="entry-title" class="entry-text-title" placeholder="Name of entry "/>
                     
@@ -66,6 +108,14 @@ header:
                     <textarea id="entry2" class="gratitude-text-box" placeholder="Lunch"></textarea>
                     <textarea id="entry3" class="gratitude-text-box" placeholder="Dinner"></textarea>
 
+  <button type="button" class="grat-collapsible">Dog Image of the Day</button>
+                    <div class="grat-content">
+                      <input class="btn-light gratitude-submit-btn" type="button" onClick="gratitudeGen()" Value="Press to generate a dog quote"/>
+                      <p class="description">Dog Image: <br>
+                        <span id="gratituderesult"></span>
+                      </p>
+                    </div>
+
   <br><br>
 
   <br><br><br>
@@ -76,7 +126,6 @@ header:
 
 
   </div>
-
 
   </div>
       </div>
@@ -90,6 +139,29 @@ header:
       </div>
     </section>
 
-  <script src="code.js"></script>
+  <script src="journal.js"></script>
   </body>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
+
+
+
 
