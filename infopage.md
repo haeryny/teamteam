@@ -17,6 +17,7 @@ header:
     <button class="tablinks" onclick="openCity(event, 'Excercise')">Exercise</button>
     <button class="tablinks" onclick="openCity(event, 'Dieting')">Dieting</button>
     <button class="tablinks" onclick="openCity(event, 'Conditions')">Conditions</button>
+    <button class="tablinks" onclick="openCity(event, 'Journal')">Journal</button>
 </div>
 
 <div id="Excercise" class="tabcontent">
@@ -61,28 +62,8 @@ header:
     <p>Make sure to remember your dog's conditions and to give medicine by following instructions from the vet. </p>
 </div>
 
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-   
-</body>
-</html> 
-
-<hr>
-<html>
-<body> 
+<div id="Journal" class="tabcontent">
+    <body> 
     <header>
       <!-- Pressing Submit will change the title of the journal to [insert name]'s Journal to make it more personal -->
       <h1 class="title" id="journal-name">My Dog's Journal</h1>
@@ -105,14 +86,6 @@ function openCity(evt, cityName) {
   <label for="entry-title" class="journal-label">Date</label>
                     <input type="text" name="entry-title" id="entry-title" class="date" placeholder="Date "/>
 
-  <!-- Mood, this is where the user enters in their mood through a slider and the emojis change -->
-  <label for="entry-title" class="journal-label">Dog's Mood Rating</label>
-                    <p class="description">Rate your dog's mood on a scale from 1-10 :)</p>
-                    <div class="slidecontainer">
-                      <p id="output" class="output">5</p>
-                      <input type="range" min="1" max="10" value="5" class="slider" id="mood">
-                    </div>
-
   <!-- These are line breaks to make the interface more aesthetically pleasing -->
   <br><br>
                     
@@ -126,14 +99,6 @@ function openCity(evt, cityName) {
                     <textarea id="entry1" class="gratitude-text-box" placeholder="Breakfast"></textarea>
                     <textarea id="entry2" class="gratitude-text-box" placeholder="Lunch"></textarea>
                     <textarea id="entry3" class="gratitude-text-box" placeholder="Dinner"></textarea>
-
-  <button type="button" class="grat-collapsible">Dog Quotes of the Day</button>
-                    <div class="grat-content">
-                      <input class="btn-light gratitude-submit-btn" type="button" onClick="gratitudeGen()" Value="Press to generate a dog quote"/>
-                      <p class="description">Gratitude question: <br>
-                        <span id="gratituderesult"></span>
-                      </p>
-                    </div>
 
   <br><br>
 
@@ -158,6 +123,29 @@ function openCity(evt, cityName) {
       </div>
     </section>
 
-  <script src="code.js"></script>
+  <script src="journal.js"></script>
   </body>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
+
+
+
 

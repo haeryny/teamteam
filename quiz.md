@@ -9,6 +9,15 @@
 <body>
     <div class="container">
         <div id="game" class="justify-center flex-column">
+          <div id="hud">
+            <div id="hud-item">
+              <p class="hud-prefix">
+              </p>
+              <h1 class="hud-main-text" id="questionCounter">
+              1/3
+              </h1>
+            </div>
+          </div>
             <h2 id="question">What personality do you want your dog to have?</h2>
             <div class="choice-container">
                 <small class="choice-prefix">A</small>
@@ -61,6 +70,61 @@
     width: 100%;
   }
 
+  #hud {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .hud-main-text {
+    text-align: center;
+    margin: 10px 0px 10px;
+  }
+
+  #hud-item {
+    display: flex;
+    text-align: center;
+  }
+
+  #game {
+    padding: .5rem 2.25rem;
+  }
+
+  #question {
+    font-size: 2rem;
+    margin: 30px 0px 18px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: #56a5eb;
+  }
+
+  h1 > span {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+
 </style>
 
 <script>
@@ -73,6 +137,7 @@
   const loader = document.getElementById('loader');
   const game = document.getElementById('game');
   const MAX_QUESTIONS = 3;
+  const questionCounterText = document.getElementById('questionCounter');
   let currentQuestion = {};
   let acceptingAnswers = false;
   let score = 0;
@@ -80,6 +145,7 @@
   let availableQuestions = [];
 
   let questions = [
+    // Update MAX_QUESTIONS when adding more
       {
           question: "What size dog do you want?",
           choice1: "Small",
@@ -93,7 +159,15 @@
           choice2: "Lazy",
           choice3: "Energetic",
           choice4: "Loyal",
+      },
+      {
+          question: "What is your price range?",
+          choice1: "$100-150",
+          choice2: "$150-200",
+          choice3: "$200-250",
+          choice4: "$250-300",
       }
+
   ];
 
   startGame = () => {
@@ -110,6 +184,7 @@
         return window.location.assign('/end.html');
     }
     questionCounter++;
+    questionCounterText.innerText = `Question: ${questionCounter}/${MAX_QUESTIONS}`;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question;
@@ -133,11 +208,19 @@
           const selectedAnswer = selectedChoice.dataset['number'];
           console.log(selectedAnswer);
           getNewQuestion(); 
+
+        // what can I replace with number
+        console.log((+selectedChoice.dataset['number']) + (+selectedChoice.dataset['number']));
       });
   });
 
   startGame();
   console.log(choices)
+
+fetch('http://fluffyfriendfinder.nighthawkcodingsociety.com/api/users/')
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+
 
   
 </script>

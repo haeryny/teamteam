@@ -7,11 +7,8 @@ const entryForm = document.querySelector("#entryForm");
 const entryResultsSection = document.querySelector("#entryResultsSection");
 const entryResultRow = document.querySelector(".entryResultRow");
 
-
-const getEntryTitle = document.getElementsByClassName("entry-text-title");
 const getEntryText = document.getElementsByClassName("entry-text-box");
 const getEntryDate = document.getElementsByClassName("date");
-const getEntryMood = document.getElementById("output");
 const getEntry1 = document.getElementById("entry1");
 const getEntry2 = document.getElementById("entry2");
 const getEntry3 = document.getElementById("entry3");
@@ -43,12 +40,6 @@ function addEntryToDom(event) {
         entryDate.textContent = getEntryDate[0].value;
         entryDiv.appendChild(entryDate);
 
-        // Add mood rating
-        const entryMood = document.createElement("h5");
-        entryMood.className = "single-entry-date";
-        entryMood.textContent = "Mood: " + getEntryMood.innerText;
-        entryDiv.appendChild(entryMood);
-
         // Adding journal gratitudes
         const entryGratitudes = document.createElement("p");
         entryGratitudes.className = "single-entry-date";
@@ -68,22 +59,6 @@ entryForm.addEventListener("submit", addEntryToDom);
 
 // Collapsible enter a new journal entry
 var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
-// Gratitude collapsible
-var coll = document.getElementsByClassName("grat-collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -136,22 +111,4 @@ slider.oninput = function() {
   else {
     document.getElementById("output").innerHTML = output + " 🤑";
   }
-}
-
-// API gratitude
-function gratitudeGen() {
-  const options = {
-      method: 'GET',
-      headers: {
-          'X-RapidAPI-Key': '222daebd02msh197e0db183672fap17cc9djsn8a1f2f813e5b',
-          'X-RapidAPI-Host': 'gratitude-questions.p.rapidapi.com'
-      }
-  };
-
-  fetch('https://gratitude-questions.p.rapidapi.com/question', options)
-      .then(response => response.json())
-      // .then(response => console.log(response))
-      // .then(response => (question = response))
-      .then(response => (document.getElementById("gratituderesult").innerHTML = response['question']))
-      .catch(err => console.error(err));
 }
