@@ -86,14 +86,6 @@ header:
   <label for="entry-title" class="journal-label">Date</label>
                     <input type="text" name="entry-title" id="entry-title" class="date" placeholder="Date "/>
 
-  <!-- Mood, this is where the user enters in their mood through a slider and the emojis change -->
-  <label for="entry-title" class="journal-label">Dog's Mood Rating</label>
-                    <p class="description">Rate your dog's mood on a scale from 1-10 :)</p>
-                    <div class="slidecontainer">
-                      <p id="output" class="output">5</p>
-                      <input type="range" min="1" max="10" value="5" class="slider" id="mood">
-                    </div>
-
   <!-- These are line breaks to make the interface more aesthetically pleasing -->
   <br><br>
                     
@@ -107,14 +99,6 @@ header:
                     <textarea id="entry1" class="gratitude-text-box" placeholder="Breakfast"></textarea>
                     <textarea id="entry2" class="gratitude-text-box" placeholder="Lunch"></textarea>
                     <textarea id="entry3" class="gratitude-text-box" placeholder="Dinner"></textarea>
-
-  <button type="button" class="grat-collapsible">Dog Image of the Day</button>
-                    <div class="grat-content">
-                      <input class="btn-light gratitude-submit-btn" type="button" onClick="gratitudeGen()" Value="Press to generate a dog image"/>
-                      <p class="description">Dog Image: <br>
-                        <span id="gratituderesult"></span>
-                      </p>
-                    </div>
 
   <br><br>
 
