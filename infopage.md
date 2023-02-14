@@ -10,18 +10,61 @@ header:
     - label: "Donate"
       url: "https://www.nationalhumanesociety.org/donations-helping-animals?gclid=Cj0KCQiA_bieBhDSARIsADU4zLevTGhcYmgdFMD1zp4eVCv6sy3HWt4q7cQZ24-GJ_OaOdyE9ubzYSwaAqajEALw_wcB"
 ---
+<html>
+<body>
 
 <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Instructions')">General</button>
-    <button class="tablinks" onclick="openCity(event, 'Back/Biceps')">Exercise</button>
-    <button class="tablinks" onclick="openCity(event, 'Chest/Triceps')">Dieting</button>
-    <button class="tablinks" onclick="openCity(event, 'Shoulders/Abs')">Conditions</button>
+    <button class="tablinks" onclick="openCity(event, 'Excercise')">Exercise</button>
+    <button class="tablinks" onclick="openCity(event, 'Dieting')">Dieting</button>
+    <button class="tablinks" onclick="openCity(event, 'Conditions')">Conditions</button>
+    <button class="tablinks" onclick="openCity(event, 'Journal')">Journal</button>
+    <button class="tablinks" onclick="openCity(event, 'Calendar')">Calendar</button>
 </div>
 
+<div id="Excercise" class="tabcontent">
+    <h3>Excercise</h3>
+    <p>Excercise for your dog is very important!</p>
+    <hr>
+    <p>Each and every dog needs their own unique excercise routine. Mostly bigger dogs need more walks and runs while smaller dogs are allowed to rest more.</p>
+    <p>Bigger Dogs</p>
+    <ul>
+      <li>Five to six walks a day: after breakfast, lunch, dinner</li>
+      <li>Three runs a day (playing fetch is also very good)</li>
+      <li>If accessible, going swimming</li>
+    </ul>
+    <p>Smaller Dogs</p>
+    <ul>
+      <li>Two to four walks a day: after breakfast, lunch, dinner</li>
+      <li>One run a day (playing fetch is also very good)</li>
+      <li>If accessible, going swimming</li>
+    </ul>
+</div>
 
+<div id="Dieting" class="tabcontent">
+    <h3>Dieting</h3>
+    <p>Your dog's diet is also very crucial.</p>
+    <hr>
+    <p>Each and every dog has different things it can eat. </p>
+    <p>Absolutely Cannot Eat</p>
+    <ul>
+      <li>Chocolate</li>
+      <li>Fruit</li>
+    </ul>
+    <p>Reccomended to Eat</p>
+    <ul>
+      <li>Kibble</li>
+      <li>Meat</li>
+      <li>Eggs</li>
+    </ul>
+</div>
 
-<html>
-<body> 
+<div id="Conditions" class="tabcontent">
+    <h3>Conditions</h3>
+    <p>Make sure to remember your dog's conditions and to give medicine by following instructions from the vet. </p>
+</div>
+
+<div id="Journal" class="tabcontent">
+    <body> 
     <header>
       <!-- Pressing Submit will change the title of the journal to [insert name]'s Journal to make it more personal -->
       <h1 class="title" id="journal-name">My Dog's Journal</h1>
@@ -36,21 +79,13 @@ header:
   <form id="entryForm" action="">
 
   <!-- Journal Entry Name -->
-  <label for="entry-title" class="journal-label">New Journal Entry</label>
+  <label for="entry-title" class="journal-label"></label>
                     <p class="description">Name Idea: Funny Event that happened today</p>
                     <input type="text" name="entry-title" id="entry-title" class="entry-text-title" placeholder="Name of entry "/>
                     
   <!-- Date -->
   <label for="entry-title" class="journal-label">Date</label>
                     <input type="text" name="entry-title" id="entry-title" class="date" placeholder="Date "/>
-
-  <!-- Mood, this is where the user enters in their mood through a slider and the emojis change -->
-  <label for="entry-title" class="journal-label">Dog's Mood Rating</label>
-                    <p class="description">Rate your dog's mood on a scale from 1-10 :)</p>
-                    <div class="slidecontainer">
-                      <p id="output" class="output">5</p>
-                      <input type="range" min="1" max="10" value="5" class="slider" id="mood">
-                    </div>
 
   <!-- These are line breaks to make the interface more aesthetically pleasing -->
   <br><br>
@@ -77,7 +112,6 @@ header:
 
   </div>
 
-
   </div>
       </div>
     </section>
@@ -90,6 +124,64 @@ header:
       </div>
     </section>
 
-  <script src="code.js"></script>
+  <script src="journal.js"></script>
   </body>
+</div>
+
+<div id="Calendar" class="tabcontent">
+  <head>
+    <meta charset="utf-8">
+    <title>Mood Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </div>  
+  </body>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
+
+
+
 

@@ -79,7 +79,7 @@ h3 {
     <h1>Joe</h1>
     <p class="price">$200</p>
     <p>Labrador Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+    <a href="/doginfo" class="card button">Learn More</a>
     <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
   </div>
@@ -158,10 +158,10 @@ h3 {
   </div>
   <div class="column">
   <div class="card">
-    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59237451/1/?bust=1672975727" alt="Denim Jeans" width="400" height="450">
-    <h1>Doug</h1>
-    <p class="price">$120</p>
-    <p>Shepherd Blend</p>
+    <img src="https://premierpups.com/azure/affordablepup/pups/pembroke-welsh-corgi-puppies-637637545598241856.jpg?w=557&h=557&mode=crop&autorotate=1" alt="Denim Jeans" width="400" height="450">
+    <h1>Carl</h1>
+    <p class="price">$200</p>
+    <p>Corgi</p>
     <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
     <p> Add to Cart </p>
       <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
