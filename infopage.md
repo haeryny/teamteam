@@ -18,6 +18,7 @@ header:
     <button class="tablinks" onclick="openCity(event, 'Dieting')">Dieting</button>
     <button class="tablinks" onclick="openCity(event, 'Conditions')">Conditions</button>
     <button class="tablinks" onclick="openCity(event, 'Journal')">Journal</button>
+    <button class="tablinks" onclick="openCity(event, 'Calendar')">Calendar</button>
 </div>
 
 <div id="Excercise" class="tabcontent">
@@ -86,14 +87,6 @@ header:
   <label for="entry-title" class="journal-label">Date</label>
                     <input type="text" name="entry-title" id="entry-title" class="date" placeholder="Date "/>
 
-  <!-- Mood, this is where the user enters in their mood through a slider and the emojis change -->
-  <label for="entry-title" class="journal-label">Dog's Mood Rating</label>
-                    <p class="description">Rate your dog's mood on a scale from 1-10 :)</p>
-                    <div class="slidecontainer">
-                      <p id="output" class="output">5</p>
-                      <input type="range" min="1" max="10" value="5" class="slider" id="mood">
-                    </div>
-
   <!-- These are line breaks to make the interface more aesthetically pleasing -->
   <br><br>
                     
@@ -107,14 +100,6 @@ header:
                     <textarea id="entry1" class="gratitude-text-box" placeholder="Breakfast"></textarea>
                     <textarea id="entry2" class="gratitude-text-box" placeholder="Lunch"></textarea>
                     <textarea id="entry3" class="gratitude-text-box" placeholder="Dinner"></textarea>
-
-  <button type="button" class="grat-collapsible">Dog Image of the Day</button>
-                    <div class="grat-content">
-                      <input class="btn-light gratitude-submit-btn" type="button" onClick="gratitudeGen()" Value="Press to generate a dog quote"/>
-                      <p class="description">Dog Image: <br>
-                        <span id="gratituderesult"></span>
-                      </p>
-                    </div>
 
   <br><br>
 
@@ -140,6 +125,41 @@ header:
     </section>
 
   <script src="journal.js"></script>
+  </body>
+</div>
+
+<div id="Calendar" class="tabcontent">
+  <head>
+    <meta charset="utf-8">
+    <title>Mood Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </div>  
   </body>
 </div>
 
