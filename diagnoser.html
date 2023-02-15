@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <title>Diagnoser</title>
-    <link rel="stylesheet" href="/diagnosed/diagnoser.css">
+    <link rel="stylesheet" href="diagnoser.css">
   </head>
   <body>
     <div id="output"></div>
     <button id="reload-button">Reload</button>
-    <script src="/diagnosed/diagnoser.js"></script>
+    <script src="diagnosis.js"></script>
     <script>
       document.getElementById("reload-button").addEventListener("click", function() {
         location.reload();
       });
     </script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   </body>
 </html>
+
 
 
