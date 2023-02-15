@@ -17,6 +17,9 @@
   </tbody>
 </table>
 
+<form action="https://haeryny.github.io/teamteam/availabledogs/">
+  <button type="submit">Return Home</button>
+
 <script>
   // prepare HTML result container for new output
   const resultContainer = document.getElementById("result");
