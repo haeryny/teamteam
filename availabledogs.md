@@ -8,8 +8,6 @@ header:
   caption: "Photo credit: [**Fine Art America**](https://fineartamerica.com/featured/various-dogs-horizontal-web-banner-susan-schmitz.html)"
 
 ---
-<a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,27 +17,14 @@ header:
 }
 
 .row {
-  display: center;
+  display: flex;
 }
 
 .column {
-  flex: 33.33%;
+  flex: 1;
   padding: 5px;
 }
-h1 {
-  text-align: center;
-}
-h3 {
-  text-align: center;
-}
 
-</style>
-</head>
-<body>
-
-<html>
-<head>
-<style>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 200px;
@@ -72,254 +57,506 @@ h3 {
 </head>
 <body>
 
-<div class="row">
-  <div class="column">
-  <div class="card">
-    <img src="https://goldenbondrescue.com/wp-content/uploads/2022/11/Trigger-3784-scaled.jpg" alt="Joe" style= "width:100%">
-    <h1>Joe</h1>
-    <p class="price">$200</p>
-    <p>Labrador Blend</p>
-    <a href="/doginfo" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  </div>
-  <div class="column">
-  <div class="card">
-    <img src="https://www.dogbreedinfo.com/images31/ShepweilerGermanShepherdRottweilerMixedBreedDogMarshall2HalfYearsOld1.jpg" alt="Bean" width="400" height="450">
-    <h1>Bean</h1>
-    <p class="price">$180</p>
-    <p>Shepherd-Rottweiler Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-    </div>
-    </div>
-    <div class="column">
-    <div class="card">
-    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55604262/2/?bust=1652662246&width=720" alt="Harry" width="400" height="450">
-    <h1>Harry</h1>
-    <p class="price">$160</p>
-    <p>Hound-Terrier Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  </div>
-</div>
+<h1>All dogs spayed/neutered, vaccinated, and microchipped!</h1>
 
 <div class="row">
   <div class="column">
-  <div class="card">
-    <img src="https://goldenbondrescue.com/wp-content/uploads/2022/11/Cody-3791.jpg" alt="Denim Jeans" style= "width:100%">
-    <h1>Honey</h1>
-    <p class="price">$200</p>
-    <p>Retriever Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  </div>
-  <div class="column">
-  <div class="card">
-    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48740896/1/?bust=1626106588" alt="Denim Jeans" width="400" height="450">
-    <h1>George</h1>
-    <p class="price">$250</p>
-    <p>Retriever Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-    </div>
-    </div>
-    <div class="column">
     <div class="card">
-    <img src="https://cdn-fastly.petguide.com/media/2022/02/16/8258005/black-mouth-cur.jpg?size=720x845&nocrop=1" alt="Denim Jeans" width="400" height="450">
-    <h1>Julie</h1>
-    <p class="price">$250</p>
-    <p>Black Mouth Cur Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  </div>
-</div>
- 
- <div class="row">
-  <div class="column">
-  <div class="card">
-    <img src="https://www.nokillnetwork.org/images/pets/original/51243_actual_two.jpeg" alt="Denim Jeans" style= "width:100%">
-    <h1>Violet</h1>
-    <p class="price">$198</p>
-    <p>Retriever Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  </div>
-  <div class="column">
-  <div class="card">
-    <img src="https://premierpups.com/azure/affordablepup/pups/pembroke-welsh-corgi-puppies-637637545598241856.jpg?w=557&h=557&mode=crop&autorotate=1" alt="Denim Jeans" width="400" height="450">
-    <h1>Carl</h1>
-    <p class="price">$200</p>
-    <p>Corgi</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Joe</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/cc7c5dd6a09649e3bf5c6bca96b21daa-1670625496-1670625511-jpg/1024-0-" alt="Joe" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$200</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
     </div>
-    </div>
-    <div class="column">
+  </div>
+  
+  <div class="column">
     <div class="card">
-    <img src="https://res.cloudinary.com/petrescue/image/upload/v1641438356/hdhnmdjlgzoeda1vfuaz.jpg" alt="Denim Jeans" width="400" height="450">
-    <h1>Thor</h1>
-    <p class="price">$200</p>
-    <p>Retriever Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Bean</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/672cb9b41e7548f68316d4a328c772d2-1673989499-1673989524-jpg/1024-0-" alt="Bean" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$180</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
+
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Harry</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/9f57a9ccb04d489c8e0faeb7a6aaecc1-1671755085-1671755107-jpg/1024-0-" alt="harry" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$160</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </div>
 
- <div class="row">
+<div class="row">
   <div class="column">
-  <div class="card">
-    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/51980554/1/?bust=1623864202&width=720" alt="Denim Jeans" style= "width:100%">
-    <h1>Stark</h1>
-    <p class="price">$220</p>
-    <p>Doberman Pinscher Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  </div>
-  <div class="column">
-  <div class="card">
-    <img src="https://www.nesr.info/images-english-shepherd-rescue/Dixie.png" alt="Denim Jeans" width="400" height="450">
-    <h1>Doug</h1>
-    <p class="price">$120</p>
-    <p>Shepherd Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-    </div>
-    </div>
-    <div class="column">
     <div class="card">
-    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/59819933/3/?bust=1675384064&width=300" alt="Denim Jeans" width="400" height="450">
-    <h1>Bucky</h1>
-    <p class="price">$140</p>
-    <p>Border Collie-Shepherd Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Honey</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/7a0fd8c5107f469a8b6e3ec6db1bc48a-1671827148-1671827194-jpg/1024-0-" alt="Honey" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$200</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
+  
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">George</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/3b17d9a97b4e41ff984e54467d122820-1670895829-1670895970-jpg/1024-0-" alt="George" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$250</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Julie</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/574b155c13f5453093faa9a9bbe6cc09-1672428396-1672428453-jpg/1024-0-" alt="Joe" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$160</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </div>
 
- <div class="row">
+<div class="row">
   <div class="column">
-  <div class="card">
-    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55998728/3/?bust=1655703370&width=720" alt="Denim Jeans" style= "width:100%">
-    <h1>Wanda</h1>
-    <p class="price">$260</p>
-    <p>Shepherd-Husky Blend</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  </div>
-  <div class="column">
-  <div class="card">
-    <img src="https://res.cloudinary.com/petrescue/image/upload/v1646802344/ruqkbygge229fqofkknt.jpg" alt="Denim Jeans" width="400" height="450">
-    <h1>Tasha</h1>
-    <p class="price">$130</p>
-    <p>Jack Russel Terrier</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-    </div>
-    </div>
-    <div class="column">
     <div class="card">
-    <img src="https://prd-use1-shelter-app.s3.amazonaws.com/pets/06-27-2022/mdruoyapsgsrpisdrkapuxkmdpkrsi.jpg" alt="Denim Jeans" width="400" height="450">
-    <h1>Shang</h1>
-    <p class="price">$140</p>
-    <p>Chihuahua Short Coat</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Violet</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/286ffc0f2e2f4227b804656084a2eb1c-1675561494-1675561497-jpeg/1024-0-" alt="Violet" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$198</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
+  
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Thor</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/1e445a3de6a44e9ca42ff1f36da4a9b0-1674933023-1674933059-jpeg/1024-0-" alt="Thor" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$200</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Stark</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/7921672da5a745d497b014d1e25802eb-1673041880-1676231549-jpeg/1024-0-" alt="Stark" width="150" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$220</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </div>
 
- <div class="row">
+<div class="row">
   <div class="column">
-  <div class="card">
-    <img src="https://d308toqq2zpasi.cloudfront.net/images/pet_listings/dog/a/7d/87/id_13125862/f6e39c/dachshund-dog-for-adoption_large.jpeg" alt="Parker" style= "width:100%">
-    <h1>Parker</h1>
-    <p class="price">$155</p>
-    <p>Dachshund</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  </div>
-  <div class="column">
-  <div class="card">
-    <img src="https://www.wric.com/wp-content/uploads/sites/74/2022/08/ENVIGO-PUPPY.jpg?w=515" alt="Denim Jeans" width="400" height="450">
-    <h1>Cap</h1>
-    <p class="price">$200</p>
-    <p>Beagle</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-    </div>
-    </div>
-    <div class="column">
     <div class="card">
-    <img src="https://s.yimg.com/ny/api/res/1.2/f.6ET9VqufzrUsrnMTQlaw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://media.zenfs.com/en/hoodline_545/78a856a1206f670e8744ca4eb8578871" alt="Denim Jeans" width="400" height="450">
-    <h1>Shuri</h1>
-    <p class="price">$190</p>
-    <p>American Staffordshire Terrier</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Doug</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/16890ba2d55b4d2b99b4c1149f8425c5-1675099945-1675099968-jpg/1024-0-" alt="Doug" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$120</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
+  
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Bucky</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/da1af9aca3db4c76b250193cafbe6874-1675374061-1675374069-jpg/1024-0-" alt="Bucky" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$140</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Wanda</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/3153afbaf9ed464ab7ab05de8cc68245-1660424834-1661448994-jpg/1024-0-" alt="Wanda" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$260</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </div>
 
- <div class="row">
+<div class="row">
   <div class="column">
-  <div class="card">
-    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48856325/3/?bust=1598164416&width=720" alt="Parker" style= "width:100%">
-    <h1>Musa</h1>
-    <p class="price">$160</p>
-    <p>American Bulldog</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-  </div>
-  </div>
-  <div class="column">
-  <div class="card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF8yhdCHDgeU3uNQ1sk2_gOb__D8YUVlfEF9Xz3vs6jLKqJpJgJSdhgNPjrF0QnnUdKIo&usqp=CAU" alt="Denim Jeans" width="400" height="450">
-    <h1>Bloom</h1>
-    <p class="price">$110</p>
-    <p>Maltese</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
-    </div>
-    </div>
-    <div class="column">
     <div class="card">
-    <img src="https://www.rocketdogrescue.org/wp-content/uploads/2018/12/thumbnail-192.jpeg" alt="Denim Jeans" width="400" height="450">
-    <h1>Stella</h1>
-    <p class="price">$220</p>
-    <p>Cattle Dog</p>
-    <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-    <p> Add to Cart </p>
-      <a href="https://haeryny.github.io/teamteam/shoppingcart/"><img src="https://cdn-icons-png.flaticon.com/512/70/70021.png" alt="shopping cart" style="width:42px;height:42px;"></a>
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Tasha</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/0c5b23a621874bbcbb4af72e870f2396-1662938148-1662938165-jpg/1024-0-" alt="Tasha" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$130</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
+  
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Shang</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/d9681fb1d6ec4e718a58a6dd40e4b333-1675210646-1675558115-jpg/1024-0-" alt="Shang" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$140</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Parker</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/7046abe642674a07bb4ff5a8f5c44da0-1675283719-1675283745-jpeg/1024-0-" alt="Parker" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$155</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Cap</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://i0.wp.com/timesofsandiego.com/wp-content/uploads/2022/08/Beagle.jpg?ssl=1" alt="Tasha" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$200</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Shuri</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/3236e8ede81d4e44b9bf806a18464230-1666577817-1666577841-jpg/1024-0-" alt="Shuri" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$190</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Musa</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/daddeb64a1374a75821e01893d456306-1671391639-1671391712-jpg/1024-0-" alt="Musa" width="120" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$160</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Bloom</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://www.aspcapetinsurance.com/media/2325/facts-about-maltese-dogs.jpg" alt="Bloom" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$110</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Stella</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/38001/4/?bust=1516228994&width=720" alt="Stella" width="160" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$220</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <section class="container content-section">
+        <div class="shop-items">
+          <div class="shop-item">
+            <span class="shop-item-title">Carl</span>
+          </div>
+          <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
+          <img class="shop-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UBDPpROLyQxohEYID4ZW3_0CUNBzyWg_lINvwUZuWfaCkk-CWXOJLwiZSHvb2YeFpaQ&usqp=CAU" alt="Carl" width="120" height="120">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$200</span>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+<section class="container content-section">
+  <h2 class="section-header">CART</h2>
+  <div class="cart-row">
+  </div>
+  <div class="cart-items">
+  </div>
+  <div class="cart-total">
+    <strong class="cart-total-title">Total</strong>
+    <span class="cart-total-price">$0</span>
+  </div>
+  <form action="https://haeryny.github.io/teamteam/shoppingcart/">
+    <button type="submit">PURCHASE</button>
+
+<script>
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready()
+}
+function ready() {
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
+    var addToCartButtons = document.getElementsByClassName('shop-item-button')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
+    }
+    // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+}
+// function purchaseClicked() {
+//     alert('Thank you for your purchase')
+//     var cartItems = document.getElementsByClassName('cart-items')[0]
+//     while (cartItems.hasChildNodes()) {
+//         cartItems.removeChild(cartItems.firstChild)
+//     }
+//     updateCartTotal()
+// }
+function removeCartItem(event) {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
+}
+function quantityChanged(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+}
+function addToCartClicked(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    addItemToCart(title, price, imageSrc)
+    updateCartTotal()
+}
+function addItemToCart(title, price, imageSrc) {
+    var cartRow = document.createElement('div')
+    cartRow.classList.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    for (var i = 0; i < cartItemNames.length; i++) {
+        if (cartItemNames[i].innerText == title) {
+            alert('This item is already added to the cart')
+            return
+        }
+    }
+    var cartRowContents = `
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+            <span class="cart-item-title">${title}</span>
+        </div>
+        <span class="cart-price cart-column">${price}</span>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+            <button class="btn btn-danger" type="button">REMOVE</button>
+        </div>`
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+function updateCartTotal() {
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var total = 0
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    total = Math.round(total * 100) / 100
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+</script>
