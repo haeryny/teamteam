@@ -11,18 +11,9 @@ header:
       url: "https://summer.harvard.edu/blog/top-10-study-tips-to-study-like-a-harvard-student/"
 
 ---
-
 <script>
-// Link the HTML element to the output
-const output = document.getElementById("output");
+console.log("Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.");
 
-// Display the title
-output.innerHTML += "<h1>Diagnoser</h1>";
-
-// Display the introduction text
-output.innerHTML += "<p>Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.</p>";
-
-// Define the symptoms
 const a = "fever";
 const b = "cough";
 const c = "shortness of breath";
@@ -40,35 +31,73 @@ const n = "no motivation, apathy";
 const o = "trouble sleeping";
 
 const symptoms = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o];
+
 const correctsymp = [];
 let correct_symp_idx = 0;
 
-// Ask questions and record the answers
 for (let index = 0; index < symptoms.length; index++) {
   const curr_sym = symptoms[index];
-  output.innerHTML += `<p>Do you have a ${curr_sym}, yes or no?</p>`;
+  console.log("Do you have a " + curr_sym + ", yes or no? ");
+
   const response = prompt();
-  
   if (response === "yes") {
     correctsymp.splice(correct_symp_idx, 0, curr_sym);
     correct_symp_idx += 1;
   }
 }
 
-// Count the number of symptoms for each illness
-const covid_symp_counter = correctsymp.filter(sym => [a, b, c, d, e].includes(sym)).length;
-const flu_symp_counter = correctsymp.filter(sym => [f, g, h, i].includes(sym)).length;
-const strep_symp_counter = correctsymp.filter(sym => [j, k, l].includes(sym)).length;
-const depression_symp_counter = correctsymp.filter(sym => [m, n, o].includes(sym)).length;
+let covid_symp_counter = 0;
 
-// Display the diagnosis
-if (correctsymp.length === 0) {
-  output.innerHTML += "<p>You do not have any illnesses!</p>";
+for (let index = 0; index < correctsymp.length; index++) {
+  const curr_sym = correctsymp[index];
+  if (curr_sym === a || curr_sym === b || curr_sym === c || curr_sym === d || curr_sym === e) {
+    covid_symp_counter += 1;
+  }
 }
 
+let flu_symp_counter = 0;
+
+for (let index = 0; index < correctsymp.length; index++) {
+  const curr_sym = correctsymp[index];
+  if (curr_sym === f || curr_sym === g || curr_sym === h || curr_sym === i) {
+    flu_symp_counter += 1;
+  }
+}
+
+let strep_symp_counter = 0;
+
+for (let index = 0; index < correctsymp.length; index++) {
+  const curr_sym = correctsymp[index];
+  if (curr_sym === j || curr_sym === k || curr_sym === l) {
+    strep_symp_counter += 1;
+  }
+}
+
+let depression_symp_counter = 0;
+
+for (let index = 0; index < correctsymp.length; index++) {
+  const curr_sym = correctsymp[index];
+  if (curr_sym === m || curr_sym === n || curr_sym === o) {
+    depression_symp_counter += 1;
+  }
+}
+
+if (correctsymp.length === 0) {
+  console.log("you do not have any illnesses!");
+}
+
+const diagnoser_list = [covid_symp_counter, flu_symp_counter, strep_symp_counter, depression_symp_counter];
 let diagnoser_max = 0;
-if (diagnoser_max < covid_symp_counter) {
-  diagn
 
+for (let index = 0; index < diagnoser_list.length; index++) {
+  const curr_diagnoser = diagnoser_list[index];
+  if (diagnoser_max < curr_diagnoser) {
+    diagnoser_max = curr_diagnoser;
+  }
+}
 
-</script>
+if (diagnoser_max === covid_symp_counter) {
+  console.log("
+
+  </script>
+
