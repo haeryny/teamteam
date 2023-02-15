@@ -12,165 +12,63 @@ header:
 
 ---
 
-<head>
-<style>
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Verdan a, sans-serif;}
+<script>
+// Link the HTML element to the output
+const output = document.getElementById("output");
 
-.month {
-  padding: 70px 25px;
-  width: 100%;
-  background: ;
-  text-align: center;
+// Display the title
+output.innerHTML += "<h1>Diagnoser</h1>";
+
+// Display the introduction text
+output.innerHTML += "<p>Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.</p>";
+
+// Define the symptoms
+const a = "fever";
+const b = "cough";
+const c = "shortness of breath";
+const d = "fatigue";
+const e = "loss of taste/smell/apetite";
+const f = "diarreha";
+const g = "abdominal cramps";
+const h = "nausea";
+const i = "vomiting";
+const j = "pain when swallowing";
+const k = "tonsils pain";
+const l = "sore throat";
+const m = "angry outbursts";
+const n = "no motivation, apathy";
+const o = "trouble sleeping";
+
+const symptoms = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o];
+const correctsymp = [];
+let correct_symp_idx = 0;
+
+// Ask questions and record the answers
+for (let index = 0; index < symptoms.length; index++) {
+  const curr_sym = symptoms[index];
+  output.innerHTML += `<p>Do you have a ${curr_sym}, yes or no?</p>`;
+  const response = prompt();
+  
+  if (response === "yes") {
+    correctsymp.splice(correct_symp_idx, 0, curr_sym);
+    correct_symp_idx += 1;
+  }
 }
 
-.month ul {
-  margin: 0;
-  padding: 0;
+// Count the number of symptoms for each illness
+const covid_symp_counter = correctsymp.filter(sym => [a, b, c, d, e].includes(sym)).length;
+const flu_symp_counter = correctsymp.filter(sym => [f, g, h, i].includes(sym)).length;
+const strep_symp_counter = correctsymp.filter(sym => [j, k, l].includes(sym)).length;
+const depression_symp_counter = correctsymp.filter(sym => [m, n, o].includes(sym)).length;
+
+// Display the diagnosis
+if (correctsymp.length === 0) {
+  output.innerHTML += "<p>You do not have any illnesses!</p>";
 }
 
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ddd;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
-
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
-}
-
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-}
-
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
-}
-
-/* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
-}
-
-@media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
-}
-
-@media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
-}
-</style>
-</head>
-<body>
-
-<h1>Febuary 2023</h1>
-
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-</ul>
-
-<ul class="days">  
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li><span class="active">9</span></li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-</ul>
-
-</body>
+let diagnoser_max = 0;
+if (diagnoser_max < covid_symp_counter) {
+  diagn
 
 
-# Homework
-> This is the homework you have for each class and what day it is due. 
-
-<table>
-    <tr>
-        <th><label for="nameOfClass">Name of Class</label></th>
-        <th><label for="date">Date</label></th>
-        <th><label for="homeworkTitle">Homework Title</label></th>
-    </tr>
-    <tr>
-        <td><input type="text" name="nameOfClass" id="name" required></td>
-        <td><input type="date" name="date" id="date" placeholder="date" required></td>
-        <td><input type="text" name="homeworkTitle"
-        id="homeworkTitle" required></td>
-        <td ><button onclick="create_User()">Create</button></td>
-    </tr>
-</table>
-
-<table>
-  <thead>
-  <tr>
-    <th></th>
-    <th>Name of Class</th>
-    <th>Date</th>
-    <th>Homework Title</th>
-  </tr>
-  </thead>
-
-  <tr>
-    <th>1</th>
-    <th>APCSP</th>
-    <th>1/16/23</th>
-    <th>Creating a table W/JSON data</th>
-  </tr>
-</table>
-
-
-
+</script>
