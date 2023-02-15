@@ -176,15 +176,4 @@ span.price {
       </form>
     </div>
   </div>
-  <div class="col-25">
-    <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="#">Joe</a> <span class="price">$200</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>$200</b></span></p>
-    </div>
-  </div>
-</div>
 
-</body>
-</html>

@@ -22,7 +22,7 @@
   const resultContainer = document.getElementById("result");
 
   // prepare fetch options
-  const url = "http://fluffyfriendfinder.nighthawkcodingsociety.com/api/users/";
+  const url = "https://fluffyfriendfinder.nighthawkcodingsociety.com/api/users/";
   const options = {
     method: 'GET', // *GET, POST, PUT, DELETE, etc.
     mode: 'cors', // no-cors, *cors, same-origin
@@ -66,7 +66,7 @@
             // obtain data that is specific to the API
             name.innerHTML = data[row].name; 
             uid.innerHTML = data[row].uid; 
-            breed.innerHMTL = data[row].breed;
+            breed.innerHTML = data[row].breed;
             sex.innerHTML = data[row].sex;
             dob.innerHTML = data[row].dob;
             age.innerHTML = data[row].age; 

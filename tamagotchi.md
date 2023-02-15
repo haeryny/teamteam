@@ -11,265 +11,93 @@ header:
       url: "https://summer.harvard.edu/blog/top-10-study-tips-to-study-like-a-harvard-student/"
 
 ---
+<script>
+console.log("Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.");
 
-<head>
-<style>
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Verdan a, sans-serif;}
+const a = "fever";
+const b = "cough";
+const c = "shortness of breath";
+const d = "fatigue";
+const e = "loss of taste/smell/apetite";
+const f = "diarreha";
+const g = "abdominal cramps";
+const h = "nausea";
+const i = "vomiting";
+const j = "pain when swallowing";
+const k = "tonsils pain";
+const l = "sore throat";
+const m = "angry outbursts";
+const n = "no motivation, apathy";
+const o = "trouble sleeping";
 
-.month {
-  padding: 70px 25px;
-  width: 100%;
-  background: ;
-  text-align: center;
+const symptoms = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o];
+
+const correctsymp = [];
+let correct_symp_idx = 0;
+
+for (let index = 0; index < symptoms.length; index++) {
+  const curr_sym = symptoms[index];
+  console.log("Do you have a " + curr_sym + ", yes or no? ");
+
+  const response = prompt();
+  if (response === "yes") {
+    correctsymp.splice(correct_symp_idx, 0, curr_sym);
+    correct_symp_idx += 1;
+  }
 }
 
-.month ul {
-  margin: 0;
-  padding: 0;
+let covid_symp_counter = 0;
+
+for (let index = 0; index < correctsymp.length; index++) {
+  const curr_sym = correctsymp[index];
+  if (curr_sym === a || curr_sym === b || curr_sym === c || curr_sym === d || curr_sym === e) {
+    covid_symp_counter += 1;
+  }
 }
 
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+let flu_symp_counter = 0;
+
+for (let index = 0; index < correctsymp.length; index++) {
+  const curr_sym = correctsymp[index];
+  if (curr_sym === f || curr_sym === g || curr_sym === h || curr_sym === i) {
+    flu_symp_counter += 1;
+  }
 }
 
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ddd;
+let strep_symp_counter = 0;
+
+for (let index = 0; index < correctsymp.length; index++) {
+  const curr_sym = correctsymp[index];
+  if (curr_sym === j || curr_sym === k || curr_sym === l) {
+    strep_symp_counter += 1;
+  }
 }
 
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
+let depression_symp_counter = 0;
+
+for (let index = 0; index < correctsymp.length; index++) {
+  const curr_sym = correctsymp[index];
+  if (curr_sym === m || curr_sym === n || curr_sym === o) {
+    depression_symp_counter += 1;
+  }
 }
 
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
+if (correctsymp.length === 0) {
+  console.log("you do not have any illnesses!");
 }
 
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
+const diagnoser_list = [covid_symp_counter, flu_symp_counter, strep_symp_counter, depression_symp_counter];
+let diagnoser_max = 0;
+
+for (let index = 0; index < diagnoser_list.length; index++) {
+  const curr_diagnoser = diagnoser_list[index];
+  if (diagnoser_max < curr_diagnoser) {
+    diagnoser_max = curr_diagnoser;
+  }
 }
 
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
-}
+if (diagnoser_max === covid_symp_counter) {
+  console.log("
 
-/* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
-}
+  </script>
 
-@media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
-}
-
-@media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
-}
-</style>
-</head>
-<body>
-
-<h1>Febuary 2023</h1>
-
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-</ul>
-
-<ul class="days">  
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li><span class="active">9</span></li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-</ul>
-
-</body>
-
-
-# Homework
-> This is the homework you have for each class and what day it is due. 
-
-<table>
-    <tr>
-        <th><label for="nameOfClass">Name of Class</label></th>
-        <th><label for="date">Date</label></th>
-        <th><label for="homeworkTitle">Homework Title</label></th>
-    </tr>
-    <tr>
-        <td><input type="text" name="nameOfClass" id="name" required></td>
-        <td><input type="date" name="date" id="date" placeholder="date" required></td>
-        <td><input type="text" name="homeworkTitle"
-        id="homeworkTitle" required></td>
-        <td ><button onclick="create_User()">Create</button></td>
-    </tr>
-</table>
-
-<table>
-  <thead>
-  <tr>
-    <th></th>
-    <th>Name of Class</th>
-    <th>Date</th>
-    <th>Homework Title</th>
-  </tr>
-  </thead>
-
-  <tr>
-    <th>1</th>
-    <th>APCSP</th>
-    <th>1/16/23</th>
-    <th>Creating a table W/JSON data</th>
-  </tr>
-</table>
-
-
- console.log ("Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.");
-
-a = "bleeding"
-b = "cough"
-c = "constipation"
-d = "red eyes"
-e = "swollen"
-f = "lethargic"
-g = "abdominal cramps"
-h = "nausea"
-i = "vomiting"
-j = "seizures"
-k = "lumps/bumps"
-l = "Drooling"
-m = "fever"
-n = "Abnormal heart rate"
-o = "trouble sleeping"
-
-
-symptoms = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o]
-
-correctsymp = []
-correct_symp_idx = 0
-for index in range(len(symptoms)):
-  curr_sym = symptoms[index]
-  print("Do you have a " + curr_sym + ", yes or no? ")
-  
-  response = input()
-  if response == "yes":
-   correctsymp.insert(correct_symp_idx, curr_sym)
-   correct_symp_idx += 1
-   
-#print(correctsymp)
-
-covid_symp_counter = 0
-
-
-for index in range(len(correctsymp)):
-  if correctsymp[index] == a or correctsymp[index] == b or correctsymp[index] == c or correctsymp[index] == d or correctsymp[index] == e:
-    covid_symp_counter = covid_symp_counter + 1
-#print(covid_symp_counter)
-    
-
-flu_symp_counter = 0
-
-for index in range(len(correctsymp)):
-  if correctsymp[index] == f or correctsymp[index] == g or correctsymp[index] == h or correctsymp[index] == i:
-    flu_symp_counter = flu_symp_counter + 1
-#print(flu_symp_counter)
-
-
-strep_symp_counter = 0
-
-for index in range(len(correctsymp)):
-  if correctsymp[index] == j or correctsymp[index] == k or correctsymp[index] == l:
-    strep_symp_counter = strep_symp_counter + 1
-#print(strep_symp_counter)
-
-depression_symp_counter = 0
-
-for index in range(len(correctsymp)):
-  if correctsymp[index] == m or correctsymp[index] == n or correctsymp[index] == o:
-    depression_symp_counter = depression_symp_counter + 1
-#print(depression_symp_counter)
-
-if len(correctsymp) == 0:
-  print("you do not have any illnesses!")
-
-
-
-diagnoser_list = [covid_symp_counter, flu_symp_counter, strep_symp_counter, depression_symp_counter]
-diagnoser_max = 0
-
-#print(diagnoser_list)
-
-for index in range (len(diagnoser_list)):
-  if (diagnoser_max < diagnoser_list[index]) :
-    diagnoser_max = diagnoser_list[index]
-
-#print(diagnoser_max)
-
-if diagnoser_max == covid_symp_counter:
-    print("You might have COVID-19")
-    print("Quarantine in your home and do not see other people. ")
-
-if diagnoser_max == flu_symp_counter:
-    print("You might have the stomach flu")
-    print("Take some Tylenol and drink hot water. If you do not completely heal in 1 week, seek help from a doctor.")
-
-if diagnoser_max == strep_symp_counter:
-    print("You might have strep throat")
-    print("Drink lots of hot water and gargle salt water. If it does not heal in 3 days, consult a doctor.")
-
-if diagnoser_max == depression_symp_counter:
-    print("You might have depression")
-    print("Go see a therapist for help.")
-
-    print("Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.                                                                                                                                                         ") 
-
-<div>
