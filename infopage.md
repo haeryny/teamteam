@@ -14,11 +14,54 @@ header:
 <body>
 
 <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Classes for Dog Training')">Classes for Dog Training</button>
     <button class="tablinks" onclick="openCity(event, 'Excercise')">Exercise</button>
     <button class="tablinks" onclick="openCity(event, 'Dieting')">Dieting</button>
     <button class="tablinks" onclick="openCity(event, 'Conditions')">Conditions</button>
     <button class="tablinks" onclick="openCity(event, 'Journal')">Journal</button>
-    <button class="tablinks" onclick="openCity(event, 'Calendar')">Calendar</button>
+</div>
+
+<div id="Classes for Dog Training" class="tabcontent">
+    <h3>Dog Training</h3>
+    <p>Knowing how to train your dog is very important! That is why this shows the available classes for learning how to train your dog.</p>
+    <input type="button" value="Generate Table" onclick="GenerateTable()" />
+    <hr />
+    <div id="dvTable"></div>
+    <script>
+    function GenerateTable() {
+//Build an array containing Customer records.
+        var customers = new Array();
+        customers.push(["Date", "Time", "Location", "Class Name"]);
+        customers.push(["2/23/23", "10:00", "4s Ranch", "Big Dogs"]);
+        customers.push(["2/23/23", "12:00", "4s Ranch", "Small Dogs"]);
+        customers.push(["2/24/23", "8:00", "Poway", "Big Dogs"]);
+        customers.push(["2/24/23", "10:00", "Poway", "Small Dogs"]);
+//Create a HTML Table element.
+        var table = document.createElement("TABLE");
+        table.border = "1";
+//Get the count of columns.
+        var columnCount = customers[0].length;
+//Add the header row.
+        var row = table.insertRow(-1);
+        for (var i = 0; i < columnCount; i++) {
+            var headerCell = document.createElement("TH");
+            headerCell.innerHTML = customers[0][i];
+            row.appendChild(headerCell);
+        }
+ //Add the data rows.
+        for (var i = 1; i < customers.length; i++) {
+            row = table.insertRow(-1);
+            for (var j = 0; j < columnCount; j++) {
+                var cell = row.insertCell(-1);
+                cell.innerHTML = customers[i][j];
+            }
+        }
+ var dvTable = document.getElementById("dvTable");
+        dvTable.innerHTML = "";
+        dvTable.appendChild(table);
+    }
+  </script>
+
 </div>
 
 <div id="Excercise" class="tabcontent">
@@ -87,14 +130,13 @@ header:
   <label for="entry-title" class="journal-label">Date</label>
                     <input type="text" name="entry-title" id="entry-title" class="date" placeholder="Date "/>
 
-  <!-- These are line breaks to make the interface more aesthetically pleasing -->
   <br><br>
                     
-  <!-- Here's the main section of the journal, where the user writes about their day for the journal -->
+  <!-- Here's the main section of the journal, where the user writes about their dog's day for the journal -->
   <label for="entry" class="journal-label">Journal about your dog's day here...</label>
                     <textarea name="daily-entry" id="entry" class="entry-text-box" placeholder="What happened to your dog today?"></textarea>
 
-  <!-- Here the user can enter three gratitudes about their day to improve their social emotional health -->
+  <!-- Here the user can enter three meals that their dog ate -->
   <label for="entry" class="journal-label">What did it eat today</label>
                     <p class="description">By putting down what they ate, you can track their diet. </p>
                     <textarea id="entry1" class="gratitude-text-box" placeholder="Breakfast"></textarea>
@@ -103,7 +145,14 @@ header:
 
   <br><br>
 
+  <!-- This is an API that generates a random dog fact -->
+  <label for="entry" class="journal-label">Here are some dog facts!</label>
+                    <input class="btn-light gratitude-submit-btn" type="button" onClick="dogGen()" Value="Press to generate a dog fact!"/>
+                    <span id="dogresponse"></span>
+
   <br><br><br>
+
+  <br><br>
 
   <!-- Submit button -->
   <button class="btn-main entry-submit-btn" type="submit">Submit</button>
@@ -124,44 +173,88 @@ header:
       </div>
     </section>
 
-  <script src="journal.js"></script>
+  <script>
+          /* eslint-disable */
+
+      // Journal Entry Form
+      // Here is getting all the variables and content from the journal entry form
+
+      const entryForm = document.querySelector("#entryForm");
+      const entryResultsSection = document.querySelector("#entryResultsSection");
+      const entryResultRow = document.querySelector(".entryResultRow");
+
+      const getEntryTitle = document.getElementsByClassName("entry-text-title");
+      const getEntryText = document.getElementsByClassName("entry-text-box");
+      const getEntryDate = document.getElementsByClassName("date");
+      const getEntry1 = document.getElementById("entry1");
+      const getEntry2 = document.getElementById("entry2");
+      const getEntry3 = document.getElementById("entry3");
+      const getEntryGratitudes = [getEntry1, getEntry2, getEntry3];
+
+
+      // This adds the journal entry to the list
+      function addEntryToDom(event) {
+        event.preventDefault();
+
+        const heading = document.createElement("h2");
+        heading.className = "heading-results";
+        entryResultRow.insertAdjacentElement("beforebegin", heading)
+
+        // Adding Div
+        const entryDiv = document.createElement("div");
+        entryDiv.className = "single-entry-div";
+        entryResultRow.appendChild(entryDiv);
+
+        // Add entry title
+        const entryHeading = document.createElement("h3");
+        entryHeading.className = "single-entry-heading";
+        entryHeading.textContent = getEntryTitle[0].value;
+        entryDiv.appendChild(entryHeading);
+
+        // Add entry date
+        const entryDate = document.createElement("h4");
+        entryDate.className = "single-entry-date";
+        entryDate.textContent = getEntryDate[0].value;
+        entryDiv.appendChild(entryDate);
+
+        // Adding journal gratitudes
+        const entryGratitudes = document.createElement("p");
+        entryGratitudes.className = "single-entry-date";
+        entryGratitudes.textContent = "Meals: " + getEntryGratitudes[0].value + ", " + getEntryGratitudes[1].value + ", " + getEntryGratitudes[2].value;
+        entryDiv.appendChild(entryGratitudes);
+
+        // Adding journal body
+        const entryParagraph = document.createElement("p");
+        entryParagraph.className = "single-entry-text";
+        entryParagraph.textContent = getEntryText[0].value;
+        entryDiv.appendChild(entryParagraph);
+        getEntryText[0].value = "";
+        }
+        
+
+      // When the submit button is clicked, the addEntryToDom function will be executed
+      entryForm.addEventListener("submit", addEntryToDom);
+
+      // Dog Fact Generator
+      function dogGen() {
+          const options = {
+	    method: 'GET',
+	    headers: {
+    		'X-RapidAPI-Key': '217acfa59emsh9a56b5c7ec9c672p11520bjsnbe23d137f1c8',
+	    	'X-RapidAPI-Host': 'dogs6.p.rapidapi.com'
+	    }
+    };
+
+    fetch('https://dogs6.p.rapidapi.com/facts', options)
+	    .then(dogresponse => dogresponse.json())
+	    .then(dogresponse => console.log(dogresponse))
+	    .catch(err => console.error(err));
+      }
+  </script>
   </body>
 </div>
 
-<div id="Calendar" class="tabcontent">
-  <head>
-    <meta charset="utf-8">
-    <title>Mood Calendar</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Font Link for Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <p class="current-date"></p>
-        <div class="icons">
-          <span id="prev" class="material-symbols-rounded">chevron_left</span>
-          <span id="next" class="material-symbols-rounded">chevron_right</span>
-        </div>
-      </header>
-      <div class="calendar">
-        <ul class="weeks">
-          <li>Sun</li>
-          <li>Mon</li>
-          <li>Tue</li>
-          <li>Wed</li>
-          <li>Thu</li>
-          <li>Fri</li>
-          <li>Sat</li>
-        </ul>
-        <ul class="days"></ul>
-      </div>
-    </div>  
-  </body>
-</div>
+
 
 <script>
 function openCity(evt, cityName) {
@@ -181,7 +274,6 @@ function openCity(evt, cityName) {
    
 </body>
 </html> 
-
 
 
 
