@@ -1,5 +1,3 @@
-
-
 const form = document.getElementById('diagnosis-form');
 
 form.addEventListener('submit', function(e) {
