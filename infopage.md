@@ -32,10 +32,10 @@ header:
 //Build an array containing Customer records.
         var customers = new Array();
         customers.push(["Date", "Time", "Location", "Class Name"]);
-        customers.push(["2/23/23", "10:00", "4s Ranch", "Big Dogs"]);
-        customers.push(["2/23/23", "12:00", "4s Ranch", "Small Dogs"]);
-        customers.push(["2/24/23", "8:00", "Poway", "Big Dogs"]);
-        customers.push(["2/24/23", "10:00", "Poway", "Small Dogs"]);
+        customers.push(["2/23/23", "10:00", "4s Ranch", "Small Dogs"]);
+        customers.push(["2/24/23", "12:00", "San Diego", "Medium Dogs"]);
+        customers.push(["2/25/23", "8:00", "Poway", "Big Dogs"]);
+        customers.push(["2/26/23", "11:00", "Los Angeles", "Large Dogs"]);
 //Create a HTML Table element.
         var table = document.createElement("TABLE");
         table.border = "1";
