@@ -65,5 +65,13 @@ form.addEventListener('submit', function(e) {
     resultEl.innerHTML = "You might have strep throat. Drink lots of hot water and gargle salt water. If it does not heal in 3 days, consult a doctor.";
   }
 
-  if (
- 
+  if (diagnoser_max === depression_symp_counter) {
+    resultEl.innerHTML = "You might have depression.";
+
+  }            
+
+
+
+
+
+  
