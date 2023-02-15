@@ -31,6 +31,8 @@ header:
   margin: auto;
   text-align: center;
   font-family: arial;
+  justify-content: center;
+  align-items: center;
 }
 
 .price {
