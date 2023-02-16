@@ -12,4 +12,4 @@ header:
 
 ---
 
-<script src="js/diagnosis.js"></script>
+<script src="diagnosis.js"></script>

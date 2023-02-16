@@ -1,5 +1,4 @@
-@import url('/diagnosed/diagnoser.css');
-
+@import url('diagnoser.css');
 body {
     font-family: Arial, sans-serif;
 }
