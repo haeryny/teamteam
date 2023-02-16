@@ -12,4 +12,4 @@ header:
 
 ---
 
-<script src="diagnosis.js"></script>
+[Diagnosis](diagnosis.html)
