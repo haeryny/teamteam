@@ -2,6 +2,41 @@
 <html>
   <head>
     <title>Diagnosis</title>
+    <style>
+      body {
+        font-family: Droid Sans Mono;
+        background-color: #e19191;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+
+      #output {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin: 30px auto;
+        max-width: 600px;
+        text-align: center;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
     <script>
       function diagnoseIllness() {
         const symptoms = ['fever', 'cough', 'shortness of breath', 'fatigue', 'loss of taste/smell/apetite', 'diarreha', 'abdominal cramps', 'nausea', 'vomiting', 'pain when swallowing', 'tonsils pain', 'sore throat', 'angry outbursts', 'no motivation, apathy', 'trouble sleeping'];
@@ -53,6 +88,7 @@
     </script>
   </head>
   <body>
+    <h1>Diagnosis</h1>
     <div id="output"></div>
     <button onclick="diagnoseIllness()">Diagnose</button>
   </body>
