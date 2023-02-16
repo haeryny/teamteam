@@ -13,7 +13,8 @@ header:
 
 [Diagnosis](diagnosis.html)
 
-<div id="Classes for Dog Training" class="tabcontent">
+<div 
+class="tabcontent">
     <h3>Dog Training</h3>
     <p>Knowing how to train your dog is very important! That is why this shows the available classes for learning how to train your dog.</p>
     <input type="button" value="Generate Table" onclick="GenerateTable()" />
@@ -55,3 +56,4 @@ header:
   </script>
 
 </div>
+hi
