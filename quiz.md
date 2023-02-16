@@ -240,7 +240,70 @@
   getNewQuestion = () => {
 
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-      return window.location.assign('/end/');
+      const resultContainer = document.getElementById("result");
+      console.log(localStorage);
+      console.log(localStorage.getItem("finalScore"));
+      let matchScore = localStorage.getItem("finalScore")
+      if(matchScore % 2 == 0) {
+          matchScore = +(matchScore) + 0.5
+      }
+      else {
+          matchScore = +(matchScore) - 0.5
+      }
+
+      console.log(matchScore)
+
+      if (matchScore == 10.5) {
+        return window.location.assign('/dogs/dog_musa/'); 
+      }
+      if (matchScore == 12.5) {
+        return window.location.assign('/dogs/dog_stark/');      
+      }
+      if (matchScore == 14.5) {
+        return window.location.assign('/dogs/dog_stella/');      
+      }
+      if (matchScore == 16.5) {
+        return window.location.assign('/dogs/dog_shuri/');  
+      }
+      if (matchScore == 18.5) {
+        return window.location.assign('/dogs/dog_parker/');        
+      }
+      if (matchScore == 20.5) {
+        return window.location.assign('/dogs/dog_bloom/');     
+      }
+      if (matchScore == 22.5) {
+        return window.location.assign('/dogs/dog_thor/');     
+      }
+      if (matchScore == 24.5) {
+        return window.location.assign('/dogs/dog_cap/');     
+      }
+      if (matchScore == 26.5) {
+        return window.location.assign('/dogs/dog_doug/');
+      }
+      if (matchScore == 28.5) {
+        return window.location.assign('/dogs/dog_honey/');
+      }
+      if (matchScore == 30.5) {
+        return window.location.assign('/dogs/dog_julie/');
+      }
+      if (matchScore == 32.5) {
+        return window.location.assign('/dogs/dog_shang/');
+      }
+      if (matchScore == 34.5) {
+        return window.location.assign('/dogs/dog_joe/');
+      }
+      if (matchScore == 36.5) {
+        return window.location.assign('/dogs/dog_harry/');
+      }
+      if (matchScore == 38.5) {
+        return window.location.assign('/dogs/dog_tasha/');    
+      }
+      if (matchScore == 40.5) {
+      return window.location.assign('/dogs/dog_bean/');   
+      }
+
+
+      localStorage.clear();
       // endFunction();
     }
     questionCounter++;
