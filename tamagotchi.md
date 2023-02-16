@@ -13,5 +13,3 @@ header:
 
 [Diagnosis](diagnosis.html)
 
-[hi](dogdisease.html)
-
