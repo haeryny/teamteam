@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diagnosis</title>
+    <style>
+      body {
+        font-family: Droid Sans Mono;
+        background-color: #e19191;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+
+      #output {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin: 30px auto;
+        max-width: 600px;
+        text-align: center;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+    
+    <script>
+      function diagnoseIllness() {
+        const symptoms = ['fever', 'cough', 'shortness of breath', 'fatigue', 'loss of taste/smell/apetite', 'diarreha', 'abdominal cramps', 'nausea', 'vomiting', 'pain when swallowing', 'tonsils pain', 'sore throat', 'angry outbursts', 'no motivation, apathy', 'trouble sleeping'];
+      
+        let userSymptoms = prompt("Please enter your symptoms, separated by commas:").toLowerCase().split(',');
+      
+        let potentialIllnesses = [];
+      
+        for (let i = 0; i < userSymptoms.length; i++) {
+          let symptom = userSymptoms[i].trim();
+      
+          if (symptoms.includes(symptom)) {
+            switch (symptom) {
+              case 'fever':
+              case 'cough':
+              case 'shortness of breath':
+              case 'fatigue':
+              case 'loss of taste/smell/apetite':
+                potentialIllnesses.push('Heartworms');
+                break;
+              case 'diarreha':
+              case 'abdominal cramps':
+              case 'nausea':
+              case 'vomiting':
+                potentialIllnesses.push('Stomach flu');
+                break;
+              case 'pain when swallowing':
+              case 'tonsils pain':
+              case 'sore throat':
+                potentialIllnesses.push('Strep throat');
+                break;
+              case 'angry outbursts':
+              case 'no motivation, apathy':
+              case 'trouble sleeping':
+                potentialIllnesses.push('Depression');
+                break;
+              default:
+                break;
+            }
+          }
+        }
+      
+        if (potentialIllnesses.length > 0) {
+          document.getElementById("output").innerHTML = "Based on your symptoms, you may have: " + potentialIllnesses.join(", ");
+        } else {
+          document.getElementById("output").innerHTML = "Sorry, we could not diagnose your illness based on the symptoms provided.";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Diagnosis</h1>
+    <div id="output"></div>
+    <button onclick="diagnoseIllness()">Diagnose</button>
+  </body>
+</html>

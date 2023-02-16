@@ -1,176 +1,60 @@
 ---
 
 layout: home
-title: Diagnosis
+title: Diagnosis 🩺
 header:
   overlay_image: /assets/images/grass dog.jpeg
-  caption: "Photo credit: [**Joceln Chan**](https://tractive.com/blog/en/safety/grass-awns-can-be-deadly-dangerous-for-your-dog-2)" 
-
-  actions:
-    - label: "Studying Tips"
-      url: "https://summer.harvard.edu/blog/top-10-study-tips-to-study-like-a-harvard-student/"
+  caption: "[🐶](https://tractive.com/blog/en/safety/grass-awns-can-be-deadly-dangerous-for-your-dog-2)" 
 
 ---
 
-<head>
-<style>
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
-body {font-family: Verdan a, sans-serif;}
+<p style="font-family: Monaco;">Does your dog have concerning symptoms?</p>
+<p style="font-family: Monaco;">Click the link below to get a diagnosis</p>
 
-.month {
-  padding: 70px 25px;
-  width: 100%;
-  background: ;
-  text-align: center;
-}
-
-.month ul {
-  margin: 0;
-  padding: 0;
-}
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ddd;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
-
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
-}
-
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-}
-
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
-}
-
-/* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-  .weekdays li, .days li {width: 13.1%;}
-}
-
-@media screen and (max-width: 420px) {
-  .weekdays li, .days li {width: 12.5%;}
-  .days li .active {padding: 2px;}
-}
-
-@media screen and (max-width: 290px) {
-  .weekdays li, .days li {width: 12.2%;}
-}
-</style>
-</head>
-<body>
-
-<h1>Febuary 2023</h1>
-
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-</ul>
-
-<ul class="days">  
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li><span class="active">9</span></li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-</ul>
-
-</body>
+[Diagnosis](diagnosis.html)
 
 
-# Homework
-> This is the homework you have for each class and what day it is due. 
 
-<table>
-    <tr>
-        <th><label for="nameOfClass">Name of Class</label></th>
-        <th><label for="date">Date</label></th>
-        <th><label for="homeworkTitle">Homework Title</label></th>
-    </tr>
-    <tr>
-        <td><input type="text" name="nameOfClass" id="name" required></td>
-        <td><input type="date" name="date" id="date" placeholder="date" required></td>
-        <td><input type="text" name="homeworkTitle"
-        id="homeworkTitle" required></td>
-        <td ><button onclick="create_User()">Create</button></td>
-    </tr>
-</table>
 
-<table>
-  <thead>
-  <tr>
-    <th></th>
-    <th>Name of Class</th>
-    <th>Date</th>
-    <th>Homework Title</th>
-  </tr>
-  </thead>
 
-  <tr>
-    <th>1</th>
-    <th>APCSP</th>
-    <th>1/16/23</th>
-    <th>Creating a table W/JSON data</th>
-  </tr>
-</table>
 
+<p style="font-family: Monaco;">Enter a breed below to get their health conditions</p>
+
+<form>
+  <label for="breed">Breed:</label>
+  <input type="text" id="breed" name="breed"><br><br>
+  <input type="button" value="Submit" onclick="getDogInfo()">
+</form>
+
+<div id="result"></div>
+
+<script>
+  function getDogInfo() {
+    var breed = document.getElementById("breed").value;
+    var url = "https://api.thedogapi.com/v1/breeds/search?q=" + breed;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        var breedId = data[0].id;
+        var breedName = data[0].name;
+        var breedTemperament = data[0].temperament;
+        var breedLifeSpan = data[0].life_span;
+
+        var result = document.getElementById("result");
+        result.innerHTML = "<p><b>" + breedName + "</b></p>" +
+          "<p><b>Temperament:</b> " + breedTemperament + "</p>" +
+          "<p><b>Life span:</b> " + breedLifeSpan + "</p>";
+      })
+      .catch(error => {
+        var result = document.getElementById("result");
+        result.innerHTML = "<p>Error: Breed not found</p>";
+      });
+  }
+</script>
+
+<p style="font-family: Monaco;">Click the link below to search our dogs' health conditions</p>
+
+[Health Backround](class.html)
 
 

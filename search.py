@@ -1,18 +1,18 @@
-
-a = "bleeding"
+print("Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.                                                                                                                                                         ")
+a = "fever"
 b = "cough"
-c = "constipation"
-d = "red eyes"
-e = "swollen"
-f = "lethargic"
+c = "shortness of breath"
+d = "fatigue"
+e = "loss of taste/smell/apetite"
+f = "diarreha"
 g = "abdominal cramps"
 h = "nausea"
 i = "vomiting"
-j = "seizures"
-k = "lumps/bumps"
-l = "Drooling"
-m = "fever"
-n = "Abnormal heart rate"
+j = "pain when swallowing"
+k = "tonsils pain"
+l = "sore throat"
+m = "angry outbursts"
+n = "no motivation, apathy"
 o = "trouble sleeping"
 
 
@@ -65,7 +65,7 @@ for index in range(len(correctsymp)):
 if len(correctsymp) == 0:
   print("you do not have any illnesses!")
 
-
+  
 
 diagnoser_list = [covid_symp_counter, flu_symp_counter, strep_symp_counter, depression_symp_counter]
 diagnoser_max = 0
@@ -92,7 +92,5 @@ if diagnoser_max == strep_symp_counter:
 
 if diagnoser_max == depression_symp_counter:
     print("You might have depression")
-    print("Go see a therapist for help.")
-
-    print("Hi, I'm the diagnoser! Please answer the following 14 questions to receive a diagnosis for your illness.                                                                                                                                                         ") 
-
+    print("Go see a therapist for help.")yes
+    
