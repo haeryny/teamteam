@@ -151,8 +151,6 @@
           question: "Pick one that you're most likely to do on a night out?",
           choice1: "Sit in bed",
           choice2: "Play video games",
-          choice3: "Go out with friends",
-          choice4: "PARTY!!!",
       },
       {
           question: "What would your friends describe you as?",

@@ -11,8 +11,5 @@ header:
       url: "https://summer.harvard.edu/blog/top-10-study-tips-to-study-like-a-harvard-student/"
 
 ---
-<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 <script src="js/diagnosis.js"></script>
-
-
