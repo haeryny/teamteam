@@ -13,47 +13,48 @@ header:
 
 [Diagnosis](diagnosis.html)
 
-<div 
-class="tabcontent">
-    <h3>Dog Training</h3>
-    <p>Knowing how to train your dog is very important! That is why this shows the available classes for learning how to train your dog.</p>
-    <input type="button" value="Generate Table" onclick="GenerateTable()" />
-    <hr />
-    <div id="dvTable"></div>
-    <script>
-    function GenerateTable() {
-//Build an array containing Customer records.
-        var customers = new Array();
-        customers.push(["Date", "Time", "Location", "Class Name"]);
-        customers.push(["2/23/23", "10:00", "4s Ranch", "Small Dogs"]);
-        customers.push(["2/24/23", "12:00", "San Diego", "Medium Dogs"]);
-        customers.push(["2/25/23", "8:00", "Poway", "Big Dogs"]);
-        customers.push(["2/26/23", "11:00", "Los Angeles", "Large Dogs"]);
-//Create a HTML Table element.
-        var table = document.createElement("TABLE");
-        table.border = "1";
-//Get the count of columns.
-        var columnCount = customers[0].length;
-//Add the header row.
-        var row = table.insertRow(-1);
-        for (var i = 0; i < columnCount; i++) {
-            var headerCell = document.createElement("TH");
-            headerCell.innerHTML = customers[0][i];
-            row.appendChild(headerCell);
-        }
- //Add the data rows.
-        for (var i = 1; i < customers.length; i++) {
-            row = table.insertRow(-1);
-            for (var j = 0; j < columnCount; j++) {
-                var cell = row.insertCell(-1);
-                cell.innerHTML = customers[i][j];
-            }
-        }
- var dvTable = document.getElementById("dvTable");
-        dvTable.innerHTML = "";
-        dvTable.appendChild(table);
-    }
-  </script>
 
-</div>
-hi
+
+
+
+
+<p style="font-family: Monaco;">Enter a breed below to get their health conditions</p>
+
+<form>
+  <label for="breed">Breed:</label>
+  <input type="text" id="breed" name="breed"><br><br>
+  <input type="button" value="Submit" onclick="getDogInfo()">
+</form>
+
+<div id="result"></div>
+
+<script>
+  function getDogInfo() {
+    var breed = document.getElementById("breed").value;
+    var url = "https://api.thedogapi.com/v1/breeds/search?q=" + breed;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        var breedId = data[0].id;
+        var breedName = data[0].name;
+        var breedTemperament = data[0].temperament;
+        var breedLifeSpan = data[0].life_span;
+
+        var result = document.getElementById("result");
+        result.innerHTML = "<p><b>" + breedName + "</b></p>" +
+          "<p><b>Temperament:</b> " + breedTemperament + "</p>" +
+          "<p><b>Life span:</b> " + breedLifeSpan + "</p>";
+      })
+      .catch(error => {
+        var result = document.getElementById("result");
+        result.innerHTML = "<p>Error: Breed not found</p>";
+      });
+  }
+</script>
+
+<p style="font-family: Monaco;">Click the link below to search our dogs' health conditions</p>
+
+[Health Backround](class.html)
+
+

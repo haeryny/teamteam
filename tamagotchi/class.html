@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dog Health Conditions</title>
+  <style>
+    /* Add some styles to the label and input elements */
+    body {
+        font-family: Monaco;
+        background-color: #e19191;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+
+      #output {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin: 30px auto;
+        max-width: 600px;
+        text-align: center;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+  </style>
+</head>
+<body>
+  <label for="search-input">Enter a dog name:</label>
+  <input type="text" id="search-input">
+  <button id="search-button">Search</button>
+  <div id="results"></div>
+
+  <script>
+    // Define the Dog class
+    class Dog {
+      constructor(name, breed, age, weight) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.weight = weight;
+      }
+
+      getHealthConditions() {
+        // Return some example health conditions based on the dog's weight
+        if (this.weight < 20) {
+          return ["Dental problems", "Allergies"];
+        } else if (this.weight >= 20 && this.weight < 50) {
+          return ["Hip dysplasia", "Arthritis"];
+        } else {
+          return ["Heart disease", "Diabetes"];
+        }
+      }
+    }
+
+    // Define some example dogs
+    const dogs = [
+      new Dog("Buddy", "Golden Retriever", 3, 70),
+      new Dog("Charlie", "Poodle", 2, 12),
+      new Dog("Max", "German Shepherd", 7, 90),
+      new Dog("Lucy", "Labrador Retriever", 5, 50),
+    ];
+
+    // Define the API URL
+    const apiUrl = "https://dog-api.kinduff.com/api/facts";
+
+    // Get the search input, search button, and results element from the DOM
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+    const results = document.getElementById("results");
+
+    // Add an event listener to the search button
+    searchButton.addEventListener("click", () => {
+      // Get the search term from the input and trim whitespace
+      const searchTerm = searchInput.value.trim();
+      if (searchTerm) {
+        // Find the dog with the matching name
+        const dog = dogs.find(dog => dog.name.toLowerCase() === searchTerm.toLowerCase());
+        if (dog) {
+          // Display the dog's health conditions
+          displayResults(dog.getHealthConditions());
+        } else {
+          displayNoResults();
+        }
+      }
+    });
+
+    // Define the searchDog function
+    function searchDog(name) {
+      fetch(`${apiUrl}/${name}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.facts) {
+            displayResults(data.facts);
+          } else {
+            displayNoResults();
+          }
+        })
+        .catch(error => console.error(error));
+    }
+
+    // Define the displayResults function
+    function displayResults(healthConditions) {
+      results.innerHTML = "";
+      const resultElement = document.createElement("div");
+      resultElement.classList.add("result");
+      resultElement.innerHTML = `
+        <h2>${searchInput.value}</h2>
+        <ul>
+          ${healthConditions.map(condition => `<li>${condition}</li>`).join("")}
+        </ul>
+      `;
+      results.appendChild(resultElement);
+    }
+
+    // Define the displayNoResults function
+    function displayNoResults() {
+      results.innerHTML = "<p>No health conditions found for that dog.</p>";
+    }
+  </script>  
+</body>
+</html>
