@@ -7,9 +7,11 @@ header:
   caption: "[🐶](https://tractive.com/blog/en/safety/grass-awns-can-be-deadly-dangerous-for-your-dog-2)" 
 
 ---
+
 <p style="font-family: Monaco;">Does your dog have concerning symptoms?</p>
 <p style="font-family: Monaco;">Click the link below to get a diagnosis</p>
 
 [Diagnosis](diagnosis.html)
 
+[hi](dogdisease.md)
 
