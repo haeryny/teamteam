@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,12 +40,7 @@
 </head>
 <body>
 
-<h2>My Customers</h2>
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
-<table id="myTable">
-  <p>YOUR NEW DOG'S INFO</p>
+<p>YOUR NEW DOG'S INFO</p>
 
 <table>
   <thead>
@@ -169,5 +163,3 @@ function myFunction() {
 }
 </script>
 
-</body>
-</html>
