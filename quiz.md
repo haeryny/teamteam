@@ -227,10 +227,21 @@
     getNewQuestion();
   }; 
 
+  endFunction = () => {
+    if(userAnswer % 2 == 0) {
+      let finalScore = userAnswer + .5
+    }
+    else {
+      let finalScore = userAnswer - .5
+    }
+    localStorage.setItem("score", finalScore);
+  }
+
   getNewQuestion = () => {
 
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        return window.location.assign('/end.html');
+      return window.location.assign('/end/');
+      // endFunction();
     }
     questionCounter++;
     questionCounterText.innerText = `Question: ${questionCounter}/${MAX_QUESTIONS}`;
@@ -274,6 +285,8 @@
             questionTotal = questionTotal + 4
             console.log(questionTotal)
           }
+
+          localStorage.setItem("finalScore", questionTotal)
           getNewQuestion(); 
     });
   });
@@ -284,6 +297,5 @@
   fetch('https://fluffyfriendfinder.nighthawkcodingsociety.com/api/users/')
     .then((response) => response.json())
     .then((data) => console.log(data));
-
   
 </script>
