@@ -61,7 +61,7 @@
 
   .choice-prefix {
     padding: 1.5rem 2.5rem;
-    background-color: #56a5eb;
+    background-color: #380df2;
     color: white;
   }
 
@@ -107,7 +107,7 @@
 
   h1 {
     font-size: 1.5rem;
-    color: #56a5eb;
+    color: #380df2;
   }
 
   h1 > span {
