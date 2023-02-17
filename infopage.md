@@ -147,23 +147,20 @@ header:
 
   <!-- This is an API that generates a random dog fact -->
   <label for="entry" class="journal-label">Here are some dog facts!</label>
-                    <input class="btn-light gratitude-submit-btn" type="button" onClick="dogGen()" Value="Press to generate a dog fact!"/>
-                    <span id="dogresponse"></span>
+                     <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Dogs can smell thousands of times better than humans. Their noses have millions more scent receptors.";
+      }
+    </script>
 
   <br><br><br>
 
   <br><br>
-
+  <div>
   <!-- Submit button -->
   <button class="btn-main entry-submit-btn" type="submit">Submit</button>
-                </form>
-
-
-  </div>
-
-  </div>
-      </div>
-    </section>
 
   <!-- Here are all the journal entries that the user submitted -->
   <section class="section sectionEntryResults" id="entryResultsSection">
@@ -251,7 +248,7 @@ header:
 	    .catch(err => console.error(err));
       }
   </script>
-  </body>
+
 </div>
 
 
@@ -271,9 +268,7 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 </script>
-   
-</body>
-</html> 
+
 
 
 
