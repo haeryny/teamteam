@@ -1,91 +1,146 @@
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+<div>
+  <form class="dogData">
+    <table style="border:none;">
+      <tr id="q">
+        <th>Name:</th>
+        <th>UID</th>
+        <th>Image</th>
+        <th>Link</th>
+        <th>Breed</th>
+        <th>Sex</th>
+        <th>Date of Birth</th>
+        <th>Price</th>
+      </tr>
+      <tr id="input">
+        <th><input type="text" id="name" required></th>
+        <th><input type="number" id="uid" required/></th>
+        <th><input type="url" id="image" required/></th>
+        <th><input type="url" id="link" required/></th>
+        <th><input type="text" id="breed" required/></th>
+        <th><input type="text" id="sex" required/></th>
+        <th><input type="text" id="dob" required/></th>
+        <th><input type="text" id="price" required/></th>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button class="add" type="button" onclick="addData()">
+            ADD
+          </button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+<br>
 
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 18px;
-}
-
-#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
-}
-
-#myTable tr {
-  border-bottom: 1px solid #ddd;
-}
-
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
-}
-</style>
-</head>
-<body>
-
-<p>YOUR NEW DOG'S INFO</p>
 
 <table>
   <thead>
   <tr>
     <th>Name</th>
     <th>UID</th>
+    <th>Image</th>
+    <th>Link</th>
     <th>Breed</th>
     <th>Sex</th>
-    <th>DOB</th>
+    <th>Date of Birth</th>
     <th>Age</th>
     <th>Price</th>
   </tr>
   </thead>
-  <tbody id="result">
+  <tbody id="newdog">
     <!-- javascript generated data -->
   </tbody>
 </table>
 
-<form action="https://haeryny.github.io/teamteam/availabledogs/">
-  <button type="submit">Return Home</button>
-
 <script>
   // prepare HTML result container for new output
-  const resultContainer = document.getElementById("result");
+  const resultContainer = document.getElementById("newdog");
+  // prepare URL's to allow easy switch from deployment and localhost
+  //const url = "http://localhost:8332/api/users"
+  const url = "https://fluffyfriendfinder.nighthawkcodingsociety.com/api/users/"
+  const create_fetch = url + '/create';
+  const read_fetch = url + "/";
 
-  // prepare fetch options
-  const url = "https://fluffyfriendfinder.nighthawkcodingsociety.com/api/users/";
-  const options = {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, *cors, same-origin
-    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'omit', // include, *same-origin, omit
-    headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-  };
+  // Load users on page entry
+  read_users();
 
-  // fetch the API
-  fetch(url, options)
+
+  // Display User Table, data is fetched from Backend Database
+  function read_users() {
+    // prepare fetch options
+    const read_options = {
+      method: 'GET', // *GET, POST, PUT, DELETE, etc.
+      mode: 'cors', // no-cors, *cors, same-origin
+      cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'omit', // include, *same-origin, omit
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    };
+
+    // fetch the data from API
+    fetch(read_fetch, read_options)
       // response is a RESTful "promise" on any successful fetch
-    .then(response => {
-      // check for response errors
-      if (response.status !== 200) {
-          const errorMsg = 'Database response error: ' + response.status;
+      .then(response => {
+        // check for response errors
+        if (response.status !== 200) {
+            const errorMsg = 'Database read error: ' + response.status;
+            console.log(errorMsg);
+            const tr = document.createElement("tr");
+            const td = document.createElement("td");
+            td.innerHTML = errorMsg;
+            tr.appendChild(td);
+            resultContainer.appendChild(tr);
+            return;
+        }
+        // valid response will have json data
+        response.json().then(data => {
+            console.log(data);
+            for (let row in data) {
+              console.log(data[row]);
+              add_row(data[row]);
+            }
+        })
+    })
+    // catch fetch errors (ie ACCESS to server blocked)
+    .catch(err => {
+      console.error(err);
+      const tr = document.createElement("tr");
+      const td = document.createElement("td");
+      td.innerHTML = err;
+      tr.appendChild(td);
+      resultContainer.appendChild(tr);
+    });
+  }
+
+  function create_user(name, uid, image, link, breed, sex, dob, price){
+    const body = {
+        name: name,
+        uid: uid,
+        image: image,
+        link: link, 
+        breed: breed,
+        sex: sex,
+        dob: dob,
+        price: price
+    };
+    const requestOptions = {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+            "content-type": "application/json",
+            'Authorization': 'Bearer my-token',
+        },
+    };
+
+    // URL for Create API
+    // Fetch API call to the database to create a new user
+    fetch(create_fetch, requestOptions)
+      .then(response => {
+        if (response.status !== 200) {
+          const errorMsg = 'Database create error: ' + response.status;
           console.log(errorMsg);
           const tr = document.createElement("tr");
           const td = document.createElement("td");
@@ -93,73 +148,78 @@
           tr.appendChild(td);
           resultContainer.appendChild(tr);
           return;
-      }
-      // valid response will have json data
-      response.json().then(data => {
-          console.log(data);
-          for (let row in data) {
-            // tr and td element id's to build out for each row
-            const tr = document.createElement("tr");
-            const name = document.createElement("td");
-            const uid = document.createElement("td");
-            const breed = document.createElement("td");
-            const sex = document.createElement("td");
-            const dob = document.createElement("td");
-            const age = document.createElement("td");
-            const price = document.createElement("td");
-          
-            // obtain data that is specific to the API
-            name.innerHTML = data[row].name; 
-            uid.innerHTML = data[row].uid; 
-            breed.innerHTML = data[row].breed;
-            sex.innerHTML = data[row].sex;
-            dob.innerHTML = data[row].dob;
-            age.innerHTML = data[row].age; 
-            price.innerHTML = data[row].price;
+        }
+        // response contains valid result
+        response.json().then(data => {
+            console.log(data);
+            add_row(data);
+        })
+    })
+  }
 
-            // add HTML to container
-            tr.appendChild(name);
-            tr.appendChild(uid);
-            tr.appendChild(breed);
-            tr.appendChild(sex);
-            tr.appendChild(dob);
-            tr.appendChild(age);
-            tr.appendChild(price);
-
-            resultContainer.appendChild(tr);
-          }
-      })
-  })
-  // catch fetch errors (ie ACCESS to server blocked)
-  .catch(err => {
-    console.error(err);
+  function add_row(data) {
     const tr = document.createElement("tr");
-    const td = document.createElement("td");
-    td.innerHTML = err;
-    tr.appendChild(td);
+    const name = document.createElement("td");
+    const image = document.createElement("td");
+    const link = document.createElement("td");
+    const uid = document.createElement("td");
+    const breed = document.createElement("td");
+    const sex = document.createElement("td");
+    const dob = document.createElement("td");
+    const age = document.createElement("td");
+    const price = document.createElement("td");
+    // obtain data that is specific to the API
+    name.innerHTML = data.name;
+    image.innerHTML = data.image;
+    link.innerHTML = data.link;
+    uid.innerHTML = data.uid;  
+    breed.innerHTML = data.breed;
+    sex.innerHTML = data.sex;
+    dob.innerHTML = data.dob; 
+    price.innerHTML = data.price; 
+    age.innerHTML = data.age; 
+    console.log(data)
+    // add HTML to container
+	tr.appendChild(name);
+    tr.appendChild(uid);
+    tr.appendChild(image);
+    tr.appendChild(link);
+    tr.appendChild(breed);
+    tr.appendChild(sex);
+    tr.appendChild(dob);
+    tr.appendChild(age);
+    tr.appendChild(price);
+
     resultContainer.appendChild(tr);
-  });
-</script>
+  }
 
+function addData(){
+  console.log(document.getElementById("name"));
+  console.log(document.getElementById("uid"));
+  console.log(document.getElementById("image"));
+  console.log(document.getElementById("link"));
+  console.log(document.getElementById("breed"));
+  console.log(document.getElementById("sex"));
+  console.log(document.getElementById("dob"));
+//   console.log(document.getElementById("age"));
+  console.log(document.getElementById("price"));
 
-<script>
-function myFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
+  if (document.getElementById("name").value && document.getElementById("uid").value && document.getElementById("image").value && document.getElementById("link").value && document.getElementById("breed").value && document.getElementById("sex").value && document.getElementById("dob").value) {
+    myData = {
+      "name": document.getElementById("name").value, 
+      "uid": document.getElementById("uid").value, 
+      "image": document.getElementById("image").value, 
+      "link": document.getElementById("link").value, 
+      "breed": document.getElementById("breed").value,
+      "sex": document.getElementById("sex").value,
+      "dob": document.getElementById("dob").value, 
+      "price": document.getElementById("price").value
+    };
+    add_row(myData);
+    //alert("before post");
+    create_user(myData.name, myData.uid, myData.image, myData.link, myData.breed, myData.sex, myData.dob, myData.price, myData.age);
+    //alert("after post");
   }
 }
-</script>
 
+</script>
