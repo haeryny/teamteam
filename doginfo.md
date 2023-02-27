@@ -1,5 +1,5 @@
 <h1> Your New Dog's Info</h1>
-
+<a href="https://haeryny.github.io/teamteam/availabledogs/" >Return</a>
 <table>
   <thead>
   <tr>
