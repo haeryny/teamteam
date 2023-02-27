@@ -1,3 +1,4 @@
+<h1>Admin: Adding Dogs</h1>
 <div>
   <form class="dogData">
     <table style="border:none;">
