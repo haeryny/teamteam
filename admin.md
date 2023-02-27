@@ -3,8 +3,8 @@ layout: single
 title: Admin
 tagline: "Admin Account"
 header:
-  overlay_image: /assets/images/availabledogs.jpg
-  caption: "Photo credit: [**Fine Art America**](https://fineartamerica.com/featured/various-dogs-horizontal-web-banner-susan-schmitz.html)"
+  overlay_image: /assets/images/admindogs.jpg
+  caption: "Photo credit: [**Adobe Stock**](https://stock.adobe.com/search/images?k=dog+banner)"
 
 ---
 <h1>Admin: Adding Dogs</h1>
