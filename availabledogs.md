@@ -70,7 +70,8 @@ header:
             <span class="shop-item-title">Joe</span>
           </div>
           <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/cc7c5dd6a09649e3bf5c6bca96b21daa-1670625496-1670625511-jpg/1024-0-" alt="Joe" width="160" height="120">
+          <canvas img class="shop-item-image" id="canvas" alt="Joe" width="160" height="105"></canvas>
+          <!-- <canvas id="canvas" width="160" height="120"></canvas> -->
           <div class="shop-item-details">
             <span class="shop-item-price">$200</span>
             <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
@@ -561,4 +562,57 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+</script>
+
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+const image = new Image();
+image.src = "https://haeryny.github.io/teamteam/grayscale/images/dogJoe.PNG";
+image.crossOrigin = "Anonymous";
+
+image.onload = () => {
+  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+  removeGray();
+};
+
+const removeGray = () => {
+  const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = imageData.data;
+  for (let i = 0; i < data.length; i += 4) {
+    const avg = (data[i] + data[i+1] + data[i+2]) / 3;
+    data[i] = avg;
+    data[i+1] = avg;
+    data[i+2] = avg;
+  }
+  ctx.putImageData(imageData, 0, 0);
+};
+</script>
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+const image = new Image();
+image.src = "https://haeryny.github.io/teamteam/grayscale/images/dogJoe.PNG";
+image.crossOrigin = "Anonymous";
+
+image.onload = () => {
+  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+  removeGray();
+};
+
+const removeGray = () => {
+  const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = imageData.data;
+  for (let i = 0; i < data.length; i += 4) {
+    const avg = (data[i] + data[i+1] + data[i+2]) / 3;
+    data[i] = avg;
+    data[i+1] = avg;
+    data[i+2] = avg;
+  }
+  ctx.putImageData(imageData, 0, 0);
+};
 </script>
