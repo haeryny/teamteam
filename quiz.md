@@ -254,52 +254,52 @@
       console.log(matchScore)
 
       if (matchScore == 10.5) {
-        return window.location.assign('/dogs/dog_musa/'); 
+        return window.location.assign('/teamteam/dogs/dog_musa/'); 
       }
       if (matchScore == 12.5) {
-        return window.location.assign('/dogs/dog_stark/');      
+        return window.location.assign('/teamteam/dogs/dog_stark/');      
       }
       if (matchScore == 14.5) {
-        return window.location.assign('/dogs/dog_stella/');      
+        return window.location.assign('/teamteam/dogs/dog_stella/');      
       }
       if (matchScore == 16.5) {
-        return window.location.assign('/dogs/dog_shuri/');  
+        return window.location.assign('/teamteam/dogs/dog_shuri/');  
       }
       if (matchScore == 18.5) {
-        return window.location.assign('/dogs/dog_parker/');        
+        return window.location.assign('/teamteam/dogs/dog_parker/');        
       }
       if (matchScore == 20.5) {
-        return window.location.assign('/dogs/dog_bloom/');     
+        return window.location.assign('/teamteam/dogs/dog_bloom/');     
       }
       if (matchScore == 22.5) {
-        return window.location.assign('/dogs/dog_thor/');     
+        return window.location.assign('/teamteam/dogs/dog_thor/');     
       }
       if (matchScore == 24.5) {
-        return window.location.assign('/dogs/dog_cap/');     
+        return window.location.assign('/teamteam/dogs/dog_cap/');     
       }
       if (matchScore == 26.5) {
-        return window.location.assign('/dogs/dog_doug/');
+        return window.location.assign('/teamteam/dogs/dog_doug/');
       }
       if (matchScore == 28.5) {
-        return window.location.assign('/dogs/dog_honey/');
+        return window.location.assign('/teamteam/dogs/dog_honey/');
       }
       if (matchScore == 30.5) {
-        return window.location.assign('/dogs/dog_julie/');
+        return window.location.assign('/teamteam/dogs/dog_julie/');
       }
       if (matchScore == 32.5) {
-        return window.location.assign('/dogs/dog_shang/');
+        return window.location.assign('/teamteam/dogs/dog_shang/');
       }
       if (matchScore == 34.5) {
-        return window.location.assign('/dogs/dog_joe/');
+        return window.location.assign('/teamteam/dogs/dog_joe/');
       }
       if (matchScore == 36.5) {
-        return window.location.assign('/dogs/dog_harry/');
+        return window.location.assign('/teamteam/dogs/dog_harry/');
       }
       if (matchScore == 38.5) {
-        return window.location.assign('/dogs/dog_tasha/');    
+        return window.location.assign('/teamteam/dogs/dog_tasha/');    
       }
       if (matchScore == 40.5) {
-      return window.location.assign('/dogs/dog_bean/');   
+      return window.location.assign('/teamteam/dogs/dog_bean/');   
       }
 
 

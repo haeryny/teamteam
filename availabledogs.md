@@ -70,10 +70,11 @@ header:
             <span class="shop-item-title">Joe</span>
           </div>
           <a href="https://haeryny.github.io/teamteam/doginfo/" class="card button">Learn More</a>
-          <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/cc7c5dd6a09649e3bf5c6bca96b21daa-1670625496-1670625511-jpg/1024-0-" alt="Joe" width="160" height="120">
+          <canvas img class="shop-item-image" id="canvas" alt="Joe" width="160" height="105"></canvas>
+          <!-- <canvas id="canvas" width="160" height="120"></canvas> -->
           <div class="shop-item-details">
             <span class="shop-item-price">$200</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -91,7 +92,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/672cb9b41e7548f68316d4a328c772d2-1673989499-1673989524-jpg/1024-0-" alt="Bean" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$180</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -109,7 +110,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/9f57a9ccb04d489c8e0faeb7a6aaecc1-1671755085-1671755107-jpg/1024-0-" alt="harry" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$160</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -129,7 +130,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/7a0fd8c5107f469a8b6e3ec6db1bc48a-1671827148-1671827194-jpg/1024-0-" alt="Honey" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$200</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -147,7 +148,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/3b17d9a97b4e41ff984e54467d122820-1670895829-1670895970-jpg/1024-0-" alt="George" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$250</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -165,7 +166,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/574b155c13f5453093faa9a9bbe6cc09-1672428396-1672428453-jpg/1024-0-" alt="Joe" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$160</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -185,7 +186,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/286ffc0f2e2f4227b804656084a2eb1c-1675561494-1675561497-jpeg/1024-0-" alt="Violet" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$198</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -203,7 +204,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/1e445a3de6a44e9ca42ff1f36da4a9b0-1674933023-1674933059-jpeg/1024-0-" alt="Thor" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$200</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -221,7 +222,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/7921672da5a745d497b014d1e25802eb-1673041880-1676231549-jpeg/1024-0-" alt="Stark" width="150" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$220</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -241,7 +242,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/16890ba2d55b4d2b99b4c1149f8425c5-1675099945-1675099968-jpg/1024-0-" alt="Doug" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$120</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -259,7 +260,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/da1af9aca3db4c76b250193cafbe6874-1675374061-1675374069-jpg/1024-0-" alt="Bucky" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$140</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -277,7 +278,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/3153afbaf9ed464ab7ab05de8cc68245-1660424834-1661448994-jpg/1024-0-" alt="Wanda" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$260</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -297,7 +298,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/0c5b23a621874bbcbb4af72e870f2396-1662938148-1662938165-jpg/1024-0-" alt="Tasha" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$130</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -315,7 +316,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/d9681fb1d6ec4e718a58a6dd40e4b333-1675210646-1675558115-jpg/1024-0-" alt="Shang" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$140</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -333,7 +334,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/7046abe642674a07bb4ff5a8f5c44da0-1675283719-1675283745-jpeg/1024-0-" alt="Parker" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$155</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -353,7 +354,7 @@ header:
           <img class="shop-item-image" src="https://i0.wp.com/timesofsandiego.com/wp-content/uploads/2022/08/Beagle.jpg?ssl=1" alt="Tasha" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$200</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -371,7 +372,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/3236e8ede81d4e44b9bf806a18464230-1666577817-1666577841-jpg/1024-0-" alt="Shuri" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$190</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -389,7 +390,7 @@ header:
           <img class="shop-item-image" src="https://do31x39459kz9.cloudfront.net/storage/image/daddeb64a1374a75821e01893d456306-1671391639-1671391712-jpg/1024-0-" alt="Musa" width="120" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$160</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -409,7 +410,7 @@ header:
           <img class="shop-item-image" src="https://www.aspcapetinsurance.com/media/2325/facts-about-maltese-dogs.jpg" alt="Bloom" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$110</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -427,7 +428,7 @@ header:
           <img class="shop-item-image" src="https://dl5zpyw5k3jeb.cloudfront.net/organization-photos/38001/4/?bust=1516228994&width=720" alt="Stella" width="160" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$220</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -445,7 +446,7 @@ header:
           <img class="shop-item-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UBDPpROLyQxohEYID4ZW3_0CUNBzyWg_lINvwUZuWfaCkk-CWXOJLwiZSHvb2YeFpaQ&usqp=CAU" alt="Carl" width="120" height="120">
           <div class="shop-item-details">
             <span class="shop-item-price">$200</span>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADOPT</button>
           </div>
         </div>
       </section>
@@ -561,4 +562,57 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+</script>
+
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+const image = new Image();
+image.src = "https://haeryny.github.io/teamteam/grayscale/images/dogJoe.PNG";
+image.crossOrigin = "Anonymous";
+
+image.onload = () => {
+  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+  removeGray();
+};
+
+const removeGray = () => {
+  const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = imageData.data;
+  for (let i = 0; i < data.length; i += 4) {
+    const avg = (data[i] + data[i+1] + data[i+2]) / 3;
+    data[i] = avg;
+    data[i+1] = avg;
+    data[i+2] = avg;
+  }
+  ctx.putImageData(imageData, 0, 0);
+};
+</script>
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+const image = new Image();
+image.src = "https://haeryny.github.io/teamteam/grayscale/images/dogJoe.PNG";
+image.crossOrigin = "Anonymous";
+
+image.onload = () => {
+  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+  removeGray();
+};
+
+const removeGray = () => {
+  const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  const data = imageData.data;
+  for (let i = 0; i < data.length; i += 4) {
+    const avg = (data[i] + data[i+1] + data[i+2]) / 3;
+    data[i] = avg;
+    data[i+1] = avg;
+    data[i+2] = avg;
+  }
+  ctx.putImageData(imageData, 0, 0);
+};
 </script>

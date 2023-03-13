@@ -10,6 +10,8 @@ main:
     url: /tamagotchi/
   - title: "Blog Your Dog"
     url: /infopage/
+  - title: "Admin"
+    url: /admin/
 
 workout-bar:
   - title: "Back/Biceps"

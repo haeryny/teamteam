@@ -1,10 +1,57 @@
-<h1> Your New Dog's Info</h1>
-<a href="https://haeryny.github.io/teamteam/availabledogs/" >Return</a>
+---
+layout: single
+title: Admin
+tagline: "Admin Account"
+header:
+  overlay_image: /assets/images/admindogs.jpg
+  caption: "Photo credit: [**Adobe Stock**](https://stock.adobe.com/search/images?k=dog+banner)"
+
+---
+<h1>Admin: Adding Dogs</h1>
+<div>
+  <form class="dogData">
+    <table style="border:none;">
+      <tr id="q">
+        <th>Name:</th>
+        <th>UID</th>
+        <th>Image</th>
+        <th>Link</th>
+        <th>Breed</th>
+        <th>Sex</th>
+        <th>Date of Birth</th>
+        <th>Price</th>
+      </tr>
+      <tr id="input">
+        <th><input type="text" id="name" required></th>
+        <th><input type="number" id="uid" required/></th>
+        <th><input type="url" id="image" required/></th>
+        <th><input type="url" id="link" required/></th>
+        <th><input type="text" id="breed" required/></th>
+        <th><input type="text" id="sex" required/></th>
+        <th><input type="text" id="dob" required/></th>
+        <th><input type="text" id="price" required/></th>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button class="add" type="button" onclick="addData()">
+            ADD
+          </button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+<br>
+
+
 <table>
   <thead>
   <tr>
     <th>Name</th>
     <th>UID</th>
+    <th>Image</th>
+    <th>Link</th>
     <th>Breed</th>
     <th>Sex</th>
     <th>Date of Birth</th>
@@ -78,10 +125,12 @@
     });
   }
 
-  function create_user(name, uid, breed, sex, dob, price){
+  function create_user(name, uid, image, link, breed, sex, dob, price){
     const body = {
         name: name,
         uid: uid,
+        image: image,
+        link: link, 
         breed: breed,
         sex: sex,
         dob: dob,
@@ -121,6 +170,8 @@
   function add_row(data) {
     const tr = document.createElement("tr");
     const name = document.createElement("td");
+    const image = document.createElement("td");
+    const link = document.createElement("td");
     const uid = document.createElement("td");
     const breed = document.createElement("td");
     const sex = document.createElement("td");
@@ -129,6 +180,8 @@
     const price = document.createElement("td");
     // obtain data that is specific to the API
     name.innerHTML = data.name;
+    image.innerHTML = data.image;
+    link.innerHTML = data.link;
     uid.innerHTML = data.uid;  
     breed.innerHTML = data.breed;
     sex.innerHTML = data.sex;
@@ -139,6 +192,8 @@
     // add HTML to container
 	tr.appendChild(name);
     tr.appendChild(uid);
+    tr.appendChild(image);
+    tr.appendChild(link);
     tr.appendChild(breed);
     tr.appendChild(sex);
     tr.appendChild(dob);
@@ -148,6 +203,33 @@
     resultContainer.appendChild(tr);
   }
 
+function addData(){
+  console.log(document.getElementById("name"));
+  console.log(document.getElementById("uid"));
+  console.log(document.getElementById("image"));
+  console.log(document.getElementById("link"));
+  console.log(document.getElementById("breed"));
+  console.log(document.getElementById("sex"));
+  console.log(document.getElementById("dob"));
+//   console.log(document.getElementById("age"));
+  console.log(document.getElementById("price"));
 
+  if (document.getElementById("name").value && document.getElementById("uid").value && document.getElementById("image").value && document.getElementById("link").value && document.getElementById("breed").value && document.getElementById("sex").value && document.getElementById("dob").value) {
+    myData = {
+      "name": document.getElementById("name").value, 
+      "uid": document.getElementById("uid").value, 
+      "image": document.getElementById("image").value, 
+      "link": document.getElementById("link").value, 
+      "breed": document.getElementById("breed").value,
+      "sex": document.getElementById("sex").value,
+      "dob": document.getElementById("dob").value, 
+      "price": document.getElementById("price").value
+    };
+    add_row(myData);
+    //alert("before post");
+    create_user(myData.name, myData.uid, myData.image, myData.link, myData.breed, myData.sex, myData.dob, myData.price, myData.age);
+    //alert("after post");
+  }
+}
 
 </script>
