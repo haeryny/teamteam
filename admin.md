@@ -49,8 +49,8 @@ header:
   <thead>
   <tr>
     <th>Name</th>
-    <th>UID</th>
-    <th>Image</th>
+    <th>Dog ID</th>
+    <th>Image Link to Dog</th>
     <th>Link</th>
     <th>Breed</th>
     <th>Sex</th>
