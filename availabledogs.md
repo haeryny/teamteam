@@ -565,13 +565,14 @@ function updateCartTotal() {
 </script>
 
 
-<script>
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+<script> 
+const canvas = document.getElementById("canvas"); // This line of code selects the HTML canvas element with an ID of "canvas" and stores it in the canvas constant.
+const ctx = canvas.getContext("2d"); //This line of code gets the 2D rendering context of the canvas and stores it in the ctx constant. This context provides the methods and properties necessary for drawing and manipulating graphics on the canvas.
 
 const image = new Image();
 image.src = "https://haeryny.github.io/teamteam/grayscale/images/dogJoe.PNG";
 image.crossOrigin = "Anonymous";
+//allows the image to be accessed and manipulated from the canvas, even if it originates from a different domain.
 
 image.onload = () => {
   ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
@@ -589,30 +590,8 @@ const removeGray = () => {
   }
   ctx.putImageData(imageData, 0, 0);
 };
+// get the pixel data for the entire canvas, and then iterates through the pixel data, calculating the average value of the red, green, and blue components of each pixel.
+// function then sets the red, green, and blue components of each pixel to the calculated average value, effectively converting the image to grayscale. 
+//putImageData() method of the 2D rendering context to put the modified pixel data back onto the canvas.
 </script>
 
-<script>
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
-
-const image = new Image();
-image.src = "https://haeryny.github.io/teamteam/grayscale/images/dogJoe.PNG";
-image.crossOrigin = "Anonymous";
-
-image.onload = () => {
-  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-  removeGray();
-};
-
-const removeGray = () => {
-  const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-  const data = imageData.data;
-  for (let i = 0; i < data.length; i += 4) {
-    const avg = (data[i] + data[i+1] + data[i+2]) / 3;
-    data[i] = avg;
-    data[i+1] = avg;
-    data[i+2] = avg;
-  }
-  ctx.putImageData(imageData, 0, 0);
-};
-</script>
