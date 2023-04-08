@@ -68,8 +68,8 @@ header:
   // prepare HTML result container for new output
   const resultContainer = document.getElementById("newdog");
   // prepare URL's to allow easy switch from deployment and localhost
-  //const url = "http://localhost:8332/api/users"
-  const url = "https://fluffyfriendfinder.nighthawkcodingsociety.com/api/users/"
+  const url = "http://127.0.0.1:8332/api/users/"
+  // const url = "https://fluffyfriendfinder.nighthawkcodingsociety.com/api/users/"
   const create_fetch = url + '/create';
   const read_fetch = url + "/";
 
