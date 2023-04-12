@@ -128,47 +128,80 @@ header:
     });
   }
 
-  function create_user(name, uid, image, link, breed, sex, dob, price){
-    const body = {
-        name: name,
-        uid: uid,
-        image: image,
-        link: link, 
-        breed: breed,
-        sex: sex,
-        dob: dob,
-        price: price
-    };
-    const requestOptions = {
-        method: 'POST',
-        body: JSON.stringify(body),
-        headers: {
-            "content-type": "application/json",
-            'Authorization': 'Bearer my-token',
-        },
-    };
+function create_user(name, uid, image, link, breed, sex, dob, price) {
+  // Check if uid already exists
+  const uid_query = '?uid=' + encodeURIComponent(uid);
+  fetch(read_fetch + uid_query)
+    .then(response => {
+      if (response.status === 200) {
+        // uid already exists, return error message
+        const errorMsg = 'Dog with UID ' + uid + ' already exists in the database';
+        alert(errorMsg);
+        return;
+      } else if (response.status === 404) {
+        // uid does not exist, create new dog
+        const body = {
+            name: name,
+            uid: uid,
+            image: image,
+            link: link, 
+            breed: breed,
+            sex: sex,
+            dob: dob,
+            price: price
+        };
+        const requestOptions = {
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: {
+                "content-type": "application/json",
+                'Authorization': 'Bearer my-token',
+            },
+        };
 
-    // URL for Create API
-    // Fetch API call to the database to create a new user
-    fetch(create_fetch, requestOptions)
-      .then(response => {
-        if (response.status !== 200) {
-          const errorMsg = 'Database create error: ' + response.status;
-          console.log(errorMsg);
-          const tr = document.createElement("tr");
-          const td = document.createElement("td");
-          td.innerHTML = errorMsg;
-          tr.appendChild(td);
-          resultContainer.appendChild(tr);
-          return;
-        }
-        // response contains valid result
-        response.json().then(data => {
-            console.log(data);
-            add_row(data);
+        // URL for Create API
+        // Fetch API call to the database to create a new user
+        fetch(create_fetch, requestOptions)
+          .then(response => {
+            if (response.status !== 200) {
+              const errorMsg = 'Database create error: ' + response.status;
+              console.log(errorMsg);
+              const tr = document.createElement("tr");
+              const td = document.createElement("td");
+              td.innerHTML = errorMsg;
+              tr.appendChild(td);
+              resultContainer.appendChild(tr);
+              return;
+            }
+            // response contains valid result
+            response.json().then(data => {
+                console.log(data);
+                add_row(data);
+            })
         })
+      } else {
+        // some other error occurred, handle it here
+        const errorMsg = 'Error checking for existing dog uid: ' + response.status;
+        console.log(errorMsg);
+        const tr = document.createElement("tr");
+        const td = document.createElement("td");
+        td.innerHTML = errorMsg;
+        tr.appendChild(td);
+        resultContainer.appendChild(tr);
+        return;
+      }
     })
-  }
+    .catch(error => {
+        const errorMsg = 'Error checking for existing dog uid: ' + error;
+        console.log(errorMsg);
+        const tr = document.createElement("tr");
+        const td = document.createElement("td");
+        td.innerHTML = errorMsg;
+        tr.appendChild(td);
+        resultContainer.appendChild(tr);
+        return;
+    });
+}
 
   function add_row(data) {
     const tr = document.createElement("tr");
