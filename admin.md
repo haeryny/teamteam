@@ -7,6 +7,7 @@ header:
   caption: "Photo credit: [**Adobe Stock**](https://stock.adobe.com/search/images?k=dog+banner)"
 
 ---
+<!-- Source: Del Norte Mr. John Mortensen APCSP Teacher -->
 <h1>Admin: Adding Dogs</h1>
 <div>
   <form class="dogData">
@@ -60,7 +61,6 @@ header:
   </tr>
   </thead>
   <tbody id="newdog">
-    <!-- javascript generated data -->
   </tbody>
 </table>
 
@@ -69,20 +69,19 @@ header:
 
   // prepare HTML result container for new output
   const resultContainer = document.getElementById("newdog");
-  // prepare URL's to allow easy switch from deployment and localhost
-  // http://172.28.18.139:8332/api/users
-  const url = "http://172.23.226.97:8332/api/users"
-  // const url = "https://fluffyfriendfinder.nighthawkcodingsociety.com/api/users"
+  // easy switch from deployment and localhost
+  // const url = "http://172.23.226.97:8332/api/users"
+  const url = "https://fluffyfriendfinder.nighthawkcodingsociety.com/api/users"
   const create_fetch = url + '/create';
   const read_fetch = url + "/";
 
-  // Load users on page entry
-  read_users();
+  // Load dogs on page entry
+  read_dogs();
 
 
-  // Display User Table, data is fetched from Backend Database
-  function read_users() {
-    // prepare fetch options
+  // Display Dog Table, data is fetched from Backend Database
+  function read_dogs() {
+    // fetch options
     const read_options = {
       method: 'GET', // *GET, POST, PUT, DELETE, etc.
       mode: 'cors', // no-cors, *cors, same-origin
@@ -117,7 +116,7 @@ header:
             }
         })
     })
-    // catch fetch errors (ie ACCESS to server blocked)
+    // catch fetch errors 
     .catch(err => {
       console.error(err);
       const tr = document.createElement("tr");
@@ -128,18 +127,18 @@ header:
     });
   }
 
-function create_user(name, uid, image, link, breed, sex, dob, price) {
+function create_dog(name, uid, image, link, breed, sex, dob, price) {
   // Check if uid already exists
   const uid_query = '?uid=' + encodeURIComponent(uid);
   fetch(read_fetch + uid_query)
     .then(response => {
       if (response.status === 200) {
-        // uid already exists, return error message
+        // if uid already exists, return error message
         const errorMsg = 'Dog with UID ' + uid + ' already exists in the database';
         alert(errorMsg);
         return;
       } else if (response.status === 404) {
-        // uid does not exist, create new dog
+        // if uid is unique, create new dog and add to table 
         const body = {
             name: name,
             uid: uid,
@@ -160,7 +159,7 @@ function create_user(name, uid, image, link, breed, sex, dob, price) {
         };
 
         // URL for Create API
-        // Fetch API call to the database to create a new user
+        // Fetch API call to the database to create a new dog
         fetch(create_fetch, requestOptions)
           .then(response => {
             if (response.status !== 200) {
@@ -202,7 +201,7 @@ function create_user(name, uid, image, link, breed, sex, dob, price) {
         return;
     });
 }
-
+  // adding dog info to table 
   function add_row(data) {
     const tr = document.createElement("tr");
     const name = document.createElement("td");
@@ -247,7 +246,6 @@ function addData(){
   console.log(document.getElementById("breed"));
   console.log(document.getElementById("sex"));
   console.log(document.getElementById("dob"));
-//   console.log(document.getElementById("age"));
   console.log(document.getElementById("price"));
 
   if (document.getElementById("name").value && document.getElementById("uid").value && document.getElementById("image").value && document.getElementById("link").value && document.getElementById("breed").value && document.getElementById("sex").value && document.getElementById("dob").value) {
@@ -262,9 +260,9 @@ function addData(){
       "price": document.getElementById("price").value
     };
     add_row(myData);
-    //alert("before post");
+    
     create_user(myData.name, myData.uid, myData.image, myData.link, myData.breed, myData.sex, myData.dob, myData.price, myData.age);
-    //alert("after post");
+    
     } else {
   alert("Please fill in all fields.");
 }
